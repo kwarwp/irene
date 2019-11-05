@@ -58,9 +58,10 @@ class LembrarHerdeitariedade:
         Pista(100, 70, "A única parte que sei é algo como 4-4, deixe eu pensar mais"),
         Pista(600, 150, "ah, a fórmula do Dr. Frederick tem 5-1, uma das meninas sabe o resto"),
         Pista(750, 140, "ah, o que você procura tem a ver com 3-2, a Débora deve saber mais"),
-        Pista(270, 120, "A Shirley é uma fofoqueira, mas já que ela já falou fique 5-1"),
+        Pista(270, 120, "A Shirley é uma fofoqueira, mas já que ela já falou, posso te contar o 5-1"),
         Pista(400, 450, "A Joana uma vez falou algo como com 2-2, lembro que alguém anotou o resto"),
-        Pista(700, 110, "Você descobre uma tabela colada no quadro"),
+        Pista(700, 110, "Na verdade, tudo está em uma tabela colada no quadro"),
+        Pista(700, 110, "Você pega a tabela colada no quadro"),
         ]
         p = self.codigo[0]
         self.dica = 0
@@ -76,12 +77,15 @@ class LembrarHerdeitariedade:
         Texto(self.fc, p.dica).vai()
         self.ajuda.elt.style.left = p.x
         self.ajuda.elt.style.top = p.y
-        if self.dica >5 :
-            Elemento(TABELA, x=120, y=130, w=600, h=600, cena=self.fc)
+        if self.dica > 6 :
+            self.tabela.elt.style.left = 170
+            self.tabela.elt.style.top = 120
+            self.tabela.elt.style.width = 500
+            self.tabela.elt.style.width = 500
         
     def vai(self, *_):
         self.fc.vai()
-        Texto(self.fc, "Você chegou ao lab Frederick, procure pistas da fórmula").vai()
+        Texto(self.fc, "Você chegou ao lab do Dr.Frederick, procure pistas da fórmula").vai()
 
 def grace():
     fc = FioCruz()
