@@ -109,3 +109,10 @@ AttributeError: 'module' object has no attribute 'update'
     imagem, kwargs = (imagem, {}) if isinstance(imagem, str) \
 AttributeError: 'FioCruz' object has no attribute '__getitem__'
 '''},
+{'date': 'Tue Nov 05 2019 14:23:28.496 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  self.ajuda = Elemento(AJUDA, x=300, y=300, w=150, y=20, cena=self.fc)
+                                                     ^
+SyntaxError: keyword argument repeated
+'''},
