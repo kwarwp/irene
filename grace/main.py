@@ -27,7 +27,7 @@ class FioCruz:
     def inicia(self):
         self.fc.vai()
 
-class E:
+class LembrarHerdeitariedade:
     """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
     estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
     e pegue esse pen drive, mas lembre-se que tem pessoas interessadas em roubar a fórmula, por isso
@@ -37,7 +37,7 @@ class E:
     Imagens: cena lab, cofre, pendrive, tabela
     """    
 
-class E:
+class EntenderHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
     seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
     porém seu amigo antes de morrer disse-lhe "botei a fórmula dentro deste cofre, cujo a senha é formada
