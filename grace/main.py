@@ -26,8 +26,16 @@ class FioCruz:
         
     def inicia(self):
         self.fc.vai()
-        
-        
+
+class E:
+    """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
+    estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
+    e pegue esse pen drive, mas lembre-se que tem pessoas interessadas em roubar a fórmula, por isso
+    o pen drive possui uma senha que você terá que ser desvendada através da tabela que você usou
+    para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
+    
+    Imagens: cena lab, cofre, pendrive, tabela
+    """    
 def grace():
     fc = FioCruz()
     fc.inicia()
