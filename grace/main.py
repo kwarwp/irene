@@ -81,7 +81,7 @@ class LembrarHerdeitariedade:
             self.tabela.elt.style.left = 170
             self.tabela.elt.style.top = 120
             self.tabela.elt.style.width = 500
-            self.tabela.elt.style.width = 500
+            self.tabela.elt.style.width = "500px"
         
     def vai(self, *_):
         self.fc.vai()
