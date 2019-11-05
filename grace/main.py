@@ -13,6 +13,7 @@ FIOFRONT = "https://i.imgur.com/wdwjGCt.jpg"
 AJUDA = "https://i.imgur.com/510Q3z4.png"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg" #"https://i.imgur.com/377duSy.jpg"
 FOCO = "https://i.imgur.com/6e096Va.png"
+TABELA = "https://imgur.com/sotDlmO.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -54,24 +55,29 @@ class LembrarHerdeitariedade:
     """
     def __init__(self):
         self.codigo = [
-        Pista(100, 70, "pista 5-5"),
-        Pista(700, 150, "pista 4-4"),
-        Pista(700, 150, "pista 5-5"),
-        Pista(700, 150, "pista 5-5"),
+        Pista(100, 70, "A única parte que sei é algo como 4-4, deixe eu pensar mais"),
+        Pista(600, 150, "ah, a fórmula do Dr. Frederick tem 5-1, uma das meninas sabe o resto"),
+        Pista(750, 140, "ah, o que você procura tem a ver com 3-2, a Débora deve saber mais"),
+        Pista(270, 120, "A Shirley é uma fofoqueira, mas já que ela já falou fique 5-1"),
+        Pista(400, 450, "A Joana uma vez falou algo como com 2-2, lembro que alguém anotou o resto"),
+        Pista(700, 110, "Você descobre uma tabela colada no quadro"),
         ]
         p = self.codigo[0]
         self.dica = 0
         self.fc = Cena(FREDERICK, direita=self, meio=self, esquerda=self)
         self.ajuda = Elemento(FOCO, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
+        self.tabela = Elemento(TABELA, x=720, y=130, w=60, h=60, cena=self.fc)
         self.ajuda.elt.style.opacity = 0.5
         self.inicia = self.vai
         
     def pista(self, *_):
-        self.dica += 1
         p = self.codigo[self.dica]
+        self.dica += 1
         Texto(self.fc, p.dica).vai()
         self.ajuda.elt.style.left = p.x
         self.ajuda.elt.style.top = p.y
+        if self.dica >5 :
+            Elemento(TABELA, x=120, y=130, w=600, h=600, cena=self.fc)
         
     def vai(self, *_):
         self.fc.vai()
