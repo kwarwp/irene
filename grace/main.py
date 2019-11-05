@@ -36,6 +36,16 @@ class E:
     
     Imagens: cena lab, cofre, pendrive, tabela
     """    
+
+class E:
+    """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
+    seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
+    porém seu amigo antes de morrer disse-lhe "botei a fórmula dentro deste cofre, cujo a senha é formada
+    por letras, que estão espalhadas em meu laboratório.". Existe uma tabela deixada pelo cientitsa para
+    decifrar quais letras formam a palavra-chave (4-4, 5-1, 3-2, 5-1, 2-2= GENES). 
+    
+    Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
+    """    
 def grace():
     fc = FioCruz()
     fc.inicia()
