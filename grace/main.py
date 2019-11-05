@@ -52,6 +52,7 @@ class LembrarHerdeitariedade:
     decifrar quais letras formam a palavra-chave (4-4, 5-1, 3-2, 5-1, 2-2= GENES). 
     
     Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
+    Na verdade, adaptei para perguntar a pessoas que já estavam na cena
     """
     def __init__(self):
         self.codigo = [
