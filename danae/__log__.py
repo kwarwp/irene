@@ -20,3 +20,10 @@ SyntaxError: EOL while scanning string literal
                                                                         ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Nov 06 2019 09:16:59.260 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  for camara in range(self.quantidade)
+                                       ^
+SyntaxError: invalid syntax
+'''},
