@@ -56,7 +56,7 @@ class TemploInca:
         self.explorador = Explorador()
         self.camara = Camara()
         self.decide = defaultdict(lambda: self.desiste)
-        self.decide.update(s:self.entra)
+        self.decide.update(s=self.entra)
         
     def inicia(self):
         """ inicia a exploração """
@@ -64,7 +64,7 @@ class TemploInca:
         
     def desiste(self):
         """ aborta a exploração """
-        input("Uma sábia decisão, seria loucura explorar este templo macabro!)]
+        input("Uma sábia decisão, seria loucura explorar este templo macabro!")
         
     def entra(self):
         """ o explorador decide entrar no templo """
