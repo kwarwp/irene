@@ -27,3 +27,29 @@ SyntaxError: EOL while scanning string literal
                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Nov 06 2019 09:17:17.875 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 95
+    TemploInca().inicia()
+  module <module> line 80
+    self.decide[input("Uma expedição para coletar os tesouros do Templo Inca. Você vai explorar o templo (s/N)?")]()
+  module <module> line 88
+    self.camara.explora(self.explorador)
+  module <module> line 43
+    self.decide[input("Você entra em uma câmara com tesouros! Continua?").lower()]()
+  module <module> line 68
+    explorador.pega(randint(1, 4), self)
+  module <module> line 26
+    camara.entra(self)
+TypeError: entra() takes 1 positional argument but more were given
+'''},
