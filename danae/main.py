@@ -19,16 +19,14 @@ class Explorador:
             
     def pega(self, quantidade, camara):
         """ coloca um tesouro na mochila """
-        print(f"Você coloca {quantidade} tesouro na mochila ")
         self.mochila += quantidade
-        print(f"Você fica com {self.mochila} tesouros na mochila ")
+        input(f"Você pega {} tesouros e fica com {self.mochila} tesouros na mochila ")
         camara.entra(self)
                     
     def sai(self):
         """ sai do templo """
-        print("Você sai do templo e guarda os tesouros!")
         self.cabana, self.mochila = self.mochila, 0
-        print(f"Você ficou com {self.cabana} tesouros na cabana!")
+        input(f"Você sai do templo e guarda  {self.cabana} tesouros na cabana!")
 
 
 class Camara:
