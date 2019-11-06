@@ -134,6 +134,11 @@ class Baralho:
         """
         return self.baralho_novo.pop()
 
+class UI:
+    """ Unidade de apresentação ao usuário
+    """
+    def __init__(self):
+        self.renderizador = input
 
 class TemploInca:
     """ O jogo do Tesouro Inca
