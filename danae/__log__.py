@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                                                                          ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Nov 06 2019 08:47:39.673 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  input("Uma sábia decisão, seria loucura explorar este templo macabro!)
+                                                                        ^
+SyntaxError: EOL while scanning string literal
+'''},
