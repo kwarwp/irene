@@ -20,7 +20,7 @@ class Explorador:
     def pega(self, quantidade, camara):
         """ coloca um tesouro na mochila """
         self.mochila += quantidade
-        input(f"Você pega {} tesouros e fica com {self.mochila} tesouros na mochila ")
+        input(f"Você pega {quantidade} tesouros e fica com {self.mochila} tesouros na mochila ")
         camara.entra(self)
                     
     def sai(self):
@@ -36,7 +36,6 @@ class Camara:
         
     def entra(self, explorador):
         """ entra em uma câmara"""
-        print()
         if input("Você entra em uma câmara com tesouros! Continua?").lower() == "s":
             if self.quantidade:
                 self.quantidade -= 1        
