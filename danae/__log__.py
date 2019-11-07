@@ -105,3 +105,10 @@ TypeError: apresenta missing 1 positional argument: 'valores'
     self.decide(self.renderizador(texto.format(valores)))
 TypeError: 'defaultdict' object is not callable
 '''},
+{'date': 'Thu Nov 07 2019 12:27:06.11 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 150
+  self.decide(self.renderizador(texto)
+                                                     ^
+SyntaxError: invalid syntax
+'''},
