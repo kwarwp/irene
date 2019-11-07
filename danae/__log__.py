@@ -174,3 +174,7 @@ KeyError: quantidade
     texto = "Você coloca {quantidade} pedras na mochila e fica com {mochila} tesouros".format(form)
 KeyError: quantidade
 '''},
+{'date': 'Thu Nov 07 2019 14:34:18.994 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: missing ) after argument list>
+'''},
