@@ -144,8 +144,9 @@ class UI:
         self.decide = defaultdict(lambda: self._default)
         self.decide.update(acoes) if acoes else None
         
-    def apresenta(self, texto, valores=None, acoes=None, *args, **kwargs):
+    def apresenta(self, texto, valores=None, acoes=None, falha=None, *args, **kwargs):
         texto = texto.format(valores) if valores else texto
+        self.falha = falha or self.falha
         self.decide.update(acoes) if acoes else None
         self.decide[self.renderizador(texto)](*args, **kwargs)
         
@@ -184,7 +185,7 @@ class TemploInca(UI):
         
     def falha(self):
         """ desiste da exploração """
-        input("Sábia decisão, vamos evitar este templo macabro!")
+        self.apresenta("Sábia decisão, vamos evitar este templo macabro!", falha=lambda: None)
         
         
     
