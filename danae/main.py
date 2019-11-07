@@ -144,9 +144,10 @@ class UI:
         self.decide = defaultdict(lambda: falha)
         self.decide.update(acoes) if acoes else None
         
-    def apresenta(self, texto, valores, acoes=None):
+    def apresenta(self, texto, valores=None, acoes=None, *args, **kwargs):
+        texto = texto.format(valores) if valores else texto
         self.decide.update(acoes) if acoes else None
-        self.decide(self.renderizador(texto.format(valores)))
+        self.decide[self.renderizador(texto)](*args, **kwargs)
         
     def falha(self, *_, **__):
         pass
@@ -154,29 +155,31 @@ class UI:
     def acerta(self, *_, **__):
         pass
 
-class TemploInca:
+class TemploInca(UI):
     """ O jogo do Tesouro Inca
     
     o jogo inicia quando se chama o método inicia
     """
     def __init__(self):
+        super().__init__()
         self.explorador = Explorador()
         self.baralho = Baralho().embaralha()
         #self.camara = CamaraPerigosa().adentra(Camara())
         self.camara = self.baralho.pop()
+        '''
         self.decide = defaultdict(lambda: self.desiste)
         self.decide["s"] = self.encara
+        '''
         
     def inicia(self):
         """ inicia a exploração """
-        o_que_decidiu = input("Uma expedição para saquear o Templo Inca. Vai encarar (s/N)?")
-        self.decide[o_que_decidiu]()
+        self.apresenta("Uma expedição para saquear o Templo Inca. Vai encarar (s/N)?")
         
-    def encara(self):
+    def acerta(self):
         """ decide iniciar a exploração """
         self.camara.entra(self.explorador)
         
-    def desiste(self):
+    def falha(self):
         """ desiste da exploração """
         input("Sábia decisão, vamos evitar este templo macabro!")
         
