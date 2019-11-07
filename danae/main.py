@@ -19,30 +19,58 @@ from random import randint, shuffle
 from collections import defaultdict
 
 
+class UI:
+    """ Unidade de apresentação ao usuário
+    """
+    def __init__(self, acoes= None, falha=None):
+        self.renderizador = input
+        acoes = acoes or dict(s=self.acerta)
+        self.falha = falha or self.falha
+        self.decide = defaultdict(lambda: self._default)
+        self.decide.update(acoes) if acoes else None
+        
+    def apresenta(self, texto, valores=None, acoes=None, falha=None, *args, **kwargs):
+        texto = texto.format(valores) if valores else texto
+        self.falha = falha or self.falha
+        self.decide.update(acoes) if acoes else None
+        self.decide[self.renderizador(texto)](*args, **kwargs)
+        
+    def _default(self, *_, **__):
+        self.falha(*_, **__)
+        
+    def falha(self, *_, **__):
+        pass
+        
+    def acerta(self, *_, **__):
+        pass
+
+
 class Explorador:
     """ explora o templo inca"""
     def __init__(self):  # (self, camara)
         self.mochila = 0
         self.cabana = 0
         self.perigos = "aranha cobra mumia desabamento fogo".split()
+        self.ui = UI()
         # self.camara = camara?
             
     def espanta(self, tipo_perigo, camara):
         """ se espanta com um perigo e foge do templo """
         perigo = self.perigos[tipo_perigo]
-        input(f"Você se espanta por ver de novo o perigo: {perigo}")
+        self.ui.apresenta("Você se espanta por ver de novo o perigo: {}", perigo)
         self.sai()
             
     def assusta(self, tipo_perigo, camara):
         """ se assusta com um perigo """
         perigo = self.perigos[tipo_perigo]
-        input(f"Você se assusta com este perigo: {perigo}")
+        self.ui.apresenta("Você se assusta com este perigo: {}", perigo)
         camara.entra(self)
             
     def pega(self, quantidade, camara):
         """ coloca um tesouro na mochila """
         self.mochila += quantidade
-        input(f"Você coloca {quantidade} pedras na mochila e fica com {self.mochila} tesouros")
+        itexto = "Você coloca {quantidade} pedras na mochila e fica com {mochila} tesouros"
+        self.ui.apresenta(texto, dict(quantidade= quantidade, mochila=self.mochila))
         camara.entra(self)
                     
     def sai(self):
@@ -134,31 +162,6 @@ class Baralho:
         """
         return self.baralho_novo.pop()
 
-class UI:
-    """ Unidade de apresentação ao usuário
-    """
-    def __init__(self, acoes= None, falha=None):
-        self.renderizador = input
-        acoes = acoes or dict(s=self.acerta)
-        self.falha = falha or self.falha
-        self.decide = defaultdict(lambda: self._default)
-        self.decide.update(acoes) if acoes else None
-        
-    def apresenta(self, texto, valores=None, acoes=None, falha=None, *args, **kwargs):
-        texto = texto.format(valores) if valores else texto
-        self.falha = falha or self.falha
-        self.decide.update(acoes) if acoes else None
-        self.decide[self.renderizador(texto)](*args, **kwargs)
-        
-    def _default(self, *_, **__):
-        self.falha(*_, **__)
-        
-    def falha(self, *_, **__):
-        pass
-        
-    def acerta(self, *_, **__):
-        pass
-
 class TemploInca(UI):
     """ O jogo do Tesouro Inca
     
@@ -170,10 +173,6 @@ class TemploInca(UI):
         self.baralho = Baralho().embaralha()
         #self.camara = CamaraPerigosa().adentra(Camara())
         self.camara = self.baralho.pop()
-        '''
-        self.decide = defaultdict(lambda: self.desiste)
-        self.decide["s"] = self.encara
-        '''
         
     def inicia(self):
         """ inicia a exploração """
