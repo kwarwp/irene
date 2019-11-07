@@ -53,3 +53,10 @@ SyntaxError: invalid syntax
     camara.entra(self)
 TypeError: entra() takes 1 positional argument but more were given
 '''},
+{'date': 'Thu Nov 07 2019 12:19:32.398 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 147
+  def apresenta(self, texto, valores, acoes=None)
+                                                  ^
+SyntaxError: invalid syntax
+'''},
