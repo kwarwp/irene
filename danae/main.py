@@ -144,14 +144,14 @@ class UI:
         self.decide = defaultdict(lambda: falha)
         self.decide.update(acoes) if acoes else None
         
-    def apresenta(self, texto, valores, acoes=None)
+    def apresenta(self, texto, valores, acoes=None):
         self.decide.update(acoes) if acoes else None
         self.decide(self.renderizador(texto.format(valores)))
         
-    def falha(self, *_, **_):
+    def falha(self, *_, **__):
         pass
         
-    def acerta(self, *_, **_):
+    def acerta(self, *_, **__):
         pass
 
 class TemploInca:
