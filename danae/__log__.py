@@ -60,3 +60,10 @@ TypeError: entra() takes 1 positional argument but more were given
                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Nov 07 2019 12:19:58.344 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 151
+  def falha(self, *_, **_):
+                        ^
+SyntaxError: duplicate argument _ in function definition
+'''},
