@@ -178,3 +178,7 @@ KeyError: quantidade
 'error': '''
 Exception: <SyntaxError: missing ) after argument list>
 '''},
+{'date': 'Thu Nov 07 2019 14:34:24.339 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: missing ) after argument list>
+'''},
