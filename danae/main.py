@@ -140,14 +140,17 @@ class UI:
     def __init__(self, acoes= None, falha=None):
         self.renderizador = input
         acoes = acoes or dict(s=self.acerta)
-        falha = falha or self.falha
-        self.decide = defaultdict(lambda: falha)
+        self.falha = falha or self.falha
+        self.decide = defaultdict(lambda: self._default)
         self.decide.update(acoes) if acoes else None
         
     def apresenta(self, texto, valores=None, acoes=None, *args, **kwargs):
         texto = texto.format(valores) if valores else texto
         self.decide.update(acoes) if acoes else None
         self.decide[self.renderizador(texto)](*args, **kwargs)
+        
+    def _default(self, *_, **__):
+        self.falha(*_, **__)
         
     def falha(self, *_, **__):
         pass
