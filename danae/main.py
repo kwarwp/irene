@@ -24,14 +24,14 @@ class UI:
     """
     def __init__(self, acoes= None, falha=None):
         self.renderizador = input
-        acoes = acoes or dict(s=self.acerta)
-        self.falha = falha or self.falha
+        acoes = acoes if acoes else  dict(s=self.acerta)
+        self.falha = falha if falha else lambda *_, **__: None
         self.decide = defaultdict(lambda: self._default)
         self.decide.update(acoes) if acoes else None
         
     def apresenta(self, texto, valores=None, acoes=None, falha=None, *args, **kwargs):
         texto = texto.format(valores) if valores else texto
-        self.falha = falha or self.falha
+        self.falha = falha if falha else  self.falha
         self.decide.update(acoes) if acoes else None
         self.decide[self.renderizador(texto)](*args, **kwargs)
         
