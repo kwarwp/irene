@@ -137,8 +137,22 @@ class Baralho:
 class UI:
     """ Unidade de apresentação ao usuário
     """
-    def __init__(self):
+    def __init__(self, acoes= None, falha=None):
         self.renderizador = input
+        acoes = acoes or dict(s=self.acerta)
+        falha = falha or self.falha
+        self.decide = defaultdict(lambda: falha)
+        self.decide.update(acoes) if acoes else None
+        
+    def apresenta(self, texto, valores, acoes=None)
+        self.decide.update(acoes) if acoes else None
+        self.decide(self.renderizador(texto.format(valores)))
+        
+    def falha(self, *_, **_):
+        pass
+        
+    def acerta(self, *_, **_):
+        pass
 
 class TemploInca:
     """ O jogo do Tesouro Inca
