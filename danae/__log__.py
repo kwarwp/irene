@@ -218,3 +218,51 @@ Exception: <SyntaxError: missing ) after argument list>
     texto = texto.format(valores) if valores else texto
 KeyError: quantidade
 '''},
+{'date': 'Fri Nov 08 2019 11:52:24.610 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 194
+    TemploInca().inicia()
+  module <module> line 179
+    self.apresenta("Uma expedição para saquear o Templo Inca. Vai encarar (s/N)?")
+  module <module> line 36
+    self.decide[self.renderizador(texto)](*args, **kwargs)
+  module <module> line 183
+    self.camara.entra(self.explorador)
+  module <module> line 134
+    self.decide[o_que_decidiu.lower()](explorador)
+  module <module> line 112
+    self.decide[self.quantidade](explorador)
+  module <module> line 144
+    explorador.assusta(self.tipo, proximo)
+  module <module> line 67
+    camara.entra(self)
+  module <module> line 134
+    self.decide[o_que_decidiu.lower()](explorador)
+  module <module> line 112
+    self.decide[self.quantidade](explorador)
+  module <module> line 144
+    explorador.assusta(self.tipo, proximo)
+  module <module> line 67
+    camara.entra(self)
+  module <module> line 107
+    self.decide[o_que_decidiu.lower()](explorador)
+  module <module> line 112
+    self.decide[self.quantidade](explorador)
+  module <module> line 117
+    explorador.pega(randint(1, 4), self.baralho.proximo())
+  module <module> line 72
+    texto = f"Você coloca {{quantidade}} pedras na mochila e fica com {mochila} tesouros"
+  module <module> line 1
+    (mochila)
+NameError: name 'mochila' is not defined
+'''},
