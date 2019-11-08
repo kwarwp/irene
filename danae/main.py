@@ -69,8 +69,8 @@ class Explorador:
     def pega(self, quantidade, camara):
         """ coloca um tesouro na mochila """
         self.mochila += quantidade
-        itexto = "Você coloca {quantidade} pedras na mochila e fica com {mochila} tesouros"
-        self.ui.apresenta(texto, dict(quantidade= quantidade, mochila=self.mochila))
+        texto = f"Você coloca {{}} pedras na mochila e fica com {self.mochila} tesouros"
+        self.ui.apresenta(texto, quantidade)
         camara.entra(self)
                     
     def sai(self):
