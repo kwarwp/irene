@@ -22,6 +22,8 @@ CANECA ="https://cdn.iset.io/assets/51664/produtos/78/thumb_514-489-caneca_amare
 TUBO_DE_ENSAIO = "https://www.prolab.com.br/wp-content/uploads/2014/10/1-Tubosdeensaio.jpg"
 RELOGIO = "https://img.kalunga.com.br/FotosdeProdutos/660992d.jpg"
 QUADRO = "https://lojaminasdepresentes.com.br/media/catalog/product/cache/1/thumbnail/1200x1400/9df78eab33525d08d6e5fb8d27136e95/y/w/ywb-1825wt_3_.jpg"
+microscopio = "https://www.agrotama.com.br//upload/novo_produtos/microscopiobiologicomonocularcomaumento400x_102030938_mini.jpg"
+
 
 class FioCruz:
     """ Cenário da FioCruz. """
