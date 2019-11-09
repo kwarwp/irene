@@ -163,3 +163,10 @@ AttributeError: 'EntenderHerdeitariedade' object has no attribute 'pista'
                                                                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Nov 09 2019 12:32:18.614 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 175
+  abre = self.abre if self.senha == "43637", else lambda *_: None
+                                            ^
+SyntaxError: invalid syntax
+'''},
