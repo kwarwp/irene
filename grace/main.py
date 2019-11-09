@@ -152,6 +152,10 @@ class EntenderHerdeitariedade:
     Imagens: cena lab, cofre, pendrive, tabela
     """    
     def __init__(self):
+        self.escritorio()
+        self.abre()
+        
+    def escritorio(self, *_):
         self.fc = Cena(ESCRITORIO, direita=self, meio=self, esquerda=self)
         self.ajuda = Elemento(COFRE, x=120, y=80, w=250, h=250, cena=self.fc,vai=self.pista)
         self.tabela = Elemento(COFREABERTO, x=720, y=130, w=60, h=60, cena=self.fc)
@@ -179,11 +183,11 @@ class EntenderHerdeitariedade:
         
     def abre(self, *_):
         self.aberto = Elemento(COFREABERTO, x=-50, y=-50, w=950, h=750, cena=self.fc)
-        self.pendrive = Elemento(PENDRIVE, x=600, y=500, w=150, h=150, cena=self.fc,vai=self.pen)
+        self.pendrive = Elemento(PENDRIVE, x=500, y=400, w=150, h=150, cena=self.fc,vai=self.pen)
         
         
-    def vai(self, *_):
-        Texto(self.fc, "Você pega o pendrive e guarde no bolso").vai()
+    def pen(self, *_):
+        Texto(self.fc, "Você pega o pendrive e guarde no bolso", foi=self.escritorio).vai()
         
         
         
