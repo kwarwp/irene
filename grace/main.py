@@ -14,7 +14,8 @@ AJUDA = "https://i.imgur.com/510Q3z4.png"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg" #"https://i.imgur.com/377duSy.jpg"
 FOCO = "https://i.imgur.com/6e096Va.png"
 TABELA = "https://imgur.com/sotDlmO.png"
-
+FIOCRUZ = "https://upload.wikimedia.org/wikipedia/commons/d/db/Castelo_fiocruz.JPG"
+BIBLIOTECA = "http://blog.crb6.org.br/wp-content/uploads/2012/10/Biblioteca-Nacional.jpg"
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
