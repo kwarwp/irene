@@ -136,3 +136,23 @@ SyntaxError: keyword argument repeated
     self.ajuda = Elemento(COFRE, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
 NameError: name 'p' is not defined
 '''},
+{'date': 'Sat Nov 09 2019 11:27:16.931 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 216
+    grace()
+  module <module> line 211
+    fc = EntenderHerdeitariedade()
+  module <module> line 155
+    self.ajuda = Elemento(COFRE, x=100, y=100, w=150, h=150, cena=self.fc,vai=self.pista)
+AttributeError: 'EntenderHerdeitariedade' object has no attribute 'pista'
+'''},
