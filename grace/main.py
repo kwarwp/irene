@@ -26,6 +26,7 @@ microscopio = "https://i.imgur.com/q414omp.png"
 GAVETA = "https://i.imgur.com/85Cta7F.jpg"
 ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
 COFREABERTO = "https://i.imgur.com/mgL4Gp2.png"
+TECLACOFRE = "https://i.imgur.com/9NiaFGL.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -156,16 +157,23 @@ class EntenderHerdeitariedade:
         self.tabela = Elemento(COFREABERTO, x=720, y=130, w=60, h=60, cena=self.fc)
         # self.ajuda.elt.style.opacity = 0.01
         self.inicia = self.vai
+        self.senha = []
         
     def vai(self, *_):
         self.fc.vai()
-        Texto(self.fc, "Você chegou ao lab do Dr.Frederick, procure pistas da fórmula").vai()
+        Texto(self.fc, "Você chegou ao escritório do Dr.Frederick, procure pistas da fórmula").vai()
         
     def pista(self, *_):
-        self.ajuda.elt.style.left = -400
-        self.ajuda.elt.style.top = -400
-        self.ajuda.elt.style.width = 1400
-        self.ajuda.elt.style.height = 1400
+        self.tecla = Elemento(TECLACOFRE, x=0, y=0, w=850, h=650, cena=self.fc,vai=self.pista)
+        [Elemento(FOCO, x=0+k%3 *200, y=0+k//3*200, w=850, h=650, 
+            cena=self.fc,vai=lambda *_:self.codigo(str(k))) for k in range(10)]
+        
+    def codigo(self, valor):
+        self.senha+=valor
+        if len(self.senha) >4:
+            #senha = "".join(self.senha)
+            Texto(self.fc, f"Você digitou a senha {self.senha}").vai()
+        
 
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
