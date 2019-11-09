@@ -23,7 +23,9 @@ TUBO_DE_ENSAIO = "https://www.prolab.com.br/wp-content/uploads/2014/10/1-Tubosde
 RELOGIO = "https://i.imgur.com/mevUdpA.png"
 QUADRO = "https://i.imgur.com/b2TqQsA.png"
 microscopio = "https://i.imgur.com/q414omp.png"
-
+GAVETA = "https://i.imgur.com/85Cta7F.jpg"
+ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
+COFREABERTO = "https://i.imgur.com/7zvQ6PZ.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -148,6 +150,16 @@ class EntenderHerdeitariedade:
     
     Imagens: cena lab, cofre, pendrive, tabela
     """    
+    def __init__(self):
+        self.fc = Cena(ESCRITORIO, direita=self, meio=self, esquerda=self)
+        self.ajuda = Elemento(COFRE, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
+        self.tabela = Elemento(COFREABERTO, x=720, y=130, w=60, h=60, cena=self.fc)
+        # self.ajuda.elt.style.opacity = 0.01
+        self.inicia = self.vai
+        
+    def vai(self, *_):
+        self.fc.vai()
+        Texto(self.fc, "Você chegou ao lab do Dr.Frederick, procure pistas da fórmula").vai()
 
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
@@ -195,7 +207,8 @@ class LembrarHerdeitariedade:
 
 def grace():
     fc = FioCruz()
-    fc = LembrarHerdeitariedade()
+    #fc = LembrarHerdeitariedade()EntenderHerdeitariedade
+    fc = EntenderHerdeitariedade()
     fc.inicia()
     
     
