@@ -14,15 +14,15 @@ AJUDA = "https://i.imgur.com/510Q3z4.png"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg" #"https://i.imgur.com/377duSy.jpg"
 FOCO = "https://i.imgur.com/6e096Va.png"
 TABELA = "https://imgur.com/sotDlmO.png"
-FIOCRUZ = "https://upload.wikimedia.org/wikipedia/commons/d/db/Castelo_fiocruz.JPG"
-BIBLIOTECA = "http://blog.crb6.org.br/wp-content/uploads/2012/10/Biblioteca-Nacional.jpg"
-COFRE = "https://loja.yale.com.br/media/catalog/product/cache/1/image/1540x1540/9df78eab33525d08d6e5fb8d27136e95/m/i/mini-cofre-digital-azul-travas-em-aco-macico-yale-1.jpg"
-PENDRIVE = "https://www.dhresource.com/0x0s/f2-albu-g5-M01-5B-FD-rBVaJFmJbNGAeStNAAF1MwnetgM037.jpg/unidade-usb-flash-sliver-otg-pendrive-128.jpg"
-CANECA ="https://cdn.iset.io/assets/51664/produtos/78/thumb_514-489-caneca_amarela_360ml_sublimatica_inktexx.png"
+FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
+BIBLIOTECA = "https://i.imgur.com/e6Oc9xU.jpg"
+COFRE = "https://i.imgur.com/obMPIpB.png"
+PENDRIVE = "https://i.imgur.com/18dBApo.png"
+CANECA ="https://i.imgur.com/El0wysJ.png"
 TUBO_DE_ENSAIO = "https://www.prolab.com.br/wp-content/uploads/2014/10/1-Tubosdeensaio.jpg"
-RELOGIO = "https://img.kalunga.com.br/FotosdeProdutos/660992d.jpg"
-QUADRO = "https://lojaminasdepresentes.com.br/media/catalog/product/cache/1/thumbnail/1200x1400/9df78eab33525d08d6e5fb8d27136e95/y/w/ywb-1825wt_3_.jpg"
-microscopio = "https://www.agrotama.com.br//upload/novo_produtos/microscopiobiologicomonocularcomaumento400x_102030938_mini.jpg"
+RELOGIO = "https://i.imgur.com/mevUdpA.png"
+QUADRO = "https://i.imgur.com/b2TqQsA.png"
+microscopio = "https://i.imgur.com/q414omp.png"
 
 
 class FioCruz:
@@ -43,6 +43,101 @@ class FioCruz:
         
     def inicia(self):
         self.fc.vai()
+
+#Inicio Jogo 1
+class LembraGene:
+    """O cientista sobe as escadas da biblioteca, ele encontra porções de sangue entre as prateleiras. 
+    Desconfiado ele resolve ir na câmera de vigilância, para tentar reconhecer a pessoa. Mas não consegue. 
+    Não há saída! Setas piscam, ilustrando o caminho, o jogador segue, chega a porta, ela se abre, laboratório.
+    Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
+    """
+class EntendeGene:
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está Â´presa, surge um enigma, 
+    acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
+    Imagens: Núcleo, Cromossomo +histonas,Proteína
+    """
+class AplicaGene:
+    """A  cientista entra e correlacione os fragmentos corretos. 
+    Imagens: Tesouras moleculares, Fragmentos DNA coloridos roxos,Fragmentos DNA preto e branco, 
+    Fragmentos de DNA amarelos, Produção de flor colorida roxa
+    """
+    
+class AnalisaGene:
+    """A cientista entra.Há um mundo mágico, há personagens mágicos, histonas, fragmentos de DNA
+    codificados e nao codificados. A porta se tranca. Surge um "cientista" fantasma. Aparece um 
+    relógio gigante e fantasmagórico. Você te xx tempo para formar a proteina xyz, que lhe dará 
+    super poderes.Faça as correlações corretas, Forma um líquido brilhoso, Bebe, Adquire super poderes.
+    Imagens: DNA codificado, DNA não codificado, Proteína XYZ,Gene KPY, Gene XVZ, Proteína KPI,
+    Estabilidade, Faça as correlações corretas, Forma um líquido brilhoso, Bebe, Adquire super poderes.
+    """
+class AvaliaGene:
+
+    """A cientista entra num calabouço, há uma pessoa presa. Solta a pessoa. Você está fraca, não conseguirá fugir
+    Volte na fase anterior. Tome a poção brilhosa sobre a mesa. Gene com super poderes. Cuidado.
+    Não sabemas a reação. Há apenas uma passagem. Surgem vários seres.Várias perguntas caem de cima
+    Pegue a pergunta. Digite na passagem a resposta correta.Justifique a existência do gene.
+    """
+class criaGene:
+    """A cientista precisa criar a sequência correta para criar uma nova proteína que irá originar o novo ser
+    Vários códons.
+    AUU - AUG - CGC - AAA - CAV - UGA - AUA - Proteína
+    Faça a combinação correta e crie uma nova proteína de um novo ser.
+    """
+#Fim do jogo 1
+    
+#inicio jogo 2
+class LembrarRNA:
+    """ O ajudante do cientista logo após acordar nas escadas próximo ao laboratório observou que hava
+    uma garça com coloração diferente das normais, percebeu que era modificada genéticamente.Precisa capturá-la. 
+    Há uma rede pendurada na parede,ele pega, joga na graça, aparentemente normal. Captura
+    Leva para o laboratório. Pega uma pena, Observa a célula, dentro dela há uma estrutura em formato de fita,
+    Ele escuta um barulho! Tenta achar uma passagem, as portas estão trancadas, ele olha a estante, puxa um livro,
+    Há um enigma, tecle na combinação correta.
+  
+   RNA     DNA    CO2
+
+   A        U      C      G
+
+   P        M      N      V
+
+   S        X      Z      O
+
+   """
+
+class EntenderRNA:
+    """Chega num jardim da FIOCRUZ, ele se aproxima, uma caixa de música ela se abre, com um holograma  contendo
+    uma estrutura.Resultado de imagem para imagem rna composição. Surge uma graça genéticamente modificada, ela 
+    é muito grande corre atrás do jogador.
+    Ele corre. Passa por um longo corredor. Sai num hospital.Há uma pandemia de marasmo, por toda a cidade
+    O jogador precisa curar as pessoas. Surge o NPC- A cura está no holograma apresentado.
+    """
+
+
+class AplicarRNA:
+    """Passa pela cidade. Há muitas pessoas doentes. Precisa da produção de um antídoto em larga escala
+    Volta para o laboratório. Vai para o microscópio. Observa o núcleo da célula. No núcleo parte brilhante (DNA)
+    Pega o fragmento de DNA. Pega uma bactéria. Introduz na bactéria. Reprodução bactérias. Pega o antídoto
+    Leva para o hospital principal.Salva as pessoas.
+    """
+class AnalisarRNA:
+    """Vai para o museu da vida, chega lá na bancada há várias moléciulas  de RNA espalhadas na bancada.
+    Há funções. O jogador precisa linkar os RNA as funções específicas. 
+    Imagens: Tradução, RNAr,RNAt, Transportador, Constituição dos ribossomos, Acelera metabolismo celular
+    RNAs, Produção de lipase, Produção de células.
+    """
+
+class AvaliarRNA:
+
+    """Caminha para outra sala do museu. Aparece um cientista. Impede sua passagem. 
+    Fala com uma voz assombrosa.
+    """
+
+class CriarRNA:
+
+    """No laboratório. Abre o computador. Pesquisa como acabar com a tristeza do planeta
+    No microscópio observa a célula. Pega o RNA. Acrescenta novos códons. Muda sua forma.
+    Produz serotonina.
+    """
 
 class EntenderHerdeitariedade:
     """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
