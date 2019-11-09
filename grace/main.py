@@ -214,18 +214,25 @@ class LembrarHerdeitariedade:
         Pista(100, 70, "A única parte que sei é algo como 4-4, deixe eu pensar mais"),
         Pista(600, 150, "Ah, a fórmula do Dr. Frederick tem 5-1, uma das meninas sabe o resto"),
         Pista(750, 140, "Bem, o que você procura tem a ver com 3-2, a Débora deve saber mais"),
-        Pista(270, 120, "A Shirley é uma fofoqueira, mas já que ela já falou, posso te contar sobre o 5-1"),
+        Pista(270, 120, "A Shirley é uma fofoqueira, mas eu posso te contar sobre o 5-1, alguem sabe o resto"),
         Pista(400, 450, "A Joana uma vez falou algo como 2-2, lembro que alguém anotou o resto em algum lugar"),
         Pista(700, 110, "No bloco você lê: Na verdade, tudo está em uma tabela colada no quadro"),
         Pista(700, 110, "Você pega a tabela colada no quadro, talvez você possa decifrar algo"),
         ]
-        p = self.codigo[0]
-        self.dica = 0
         self.fc = Cena(FREDERICK, direita=self, meio=self, esquerda=self)
-        self.ajuda = Elemento(FOCO, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
         self.tabela = Elemento(TABELA, x=720, y=130, w=60, h=60, cena=self.fc)
         self.ajuda.elt.style.opacity = 0.01
         self.inicia = self.vai
+        self.inicia_pista()
+        
+    def inicia_pista(self, *_):
+        p = self.codigo[0]
+        self.dica = 0
+        self.ajuda = Elemento(FOCO, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
+        self.tabela.elt.style.left = 720
+        self.tabela.elt.style.top = 130
+        self.tabela.elt.style.width = 60
+        self.tabela.elt.style.height = "60px"
         
     def pista(self, *_):
         p = self.codigo[self.dica]
@@ -238,6 +245,7 @@ class LembrarHerdeitariedade:
             self.tabela.elt.style.top = 120
             self.tabela.elt.style.width = 500
             self.tabela.elt.style.height = "500px"
+            self.tabela.vai = self.inicia_pista
         
     def vai(self, *_):
         self.fc.vai()
@@ -245,8 +253,8 @@ class LembrarHerdeitariedade:
 
 def grace():
     fc = FioCruz()
-    #fc = LembrarHerdeitariedade()EntenderHerdeitariedade
-    fc = EntenderHerdeitariedade()
+    fc = LembrarHerdeitariedade()
+    #fc = EntenderHerdeitariedade()
     fc.inicia()
     
     
