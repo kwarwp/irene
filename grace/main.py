@@ -16,6 +16,13 @@ FOCO = "https://i.imgur.com/6e096Va.png"
 TABELA = "https://imgur.com/sotDlmO.png"
 FIOCRUZ = "https://upload.wikimedia.org/wikipedia/commons/d/db/Castelo_fiocruz.JPG"
 BIBLIOTECA = "http://blog.crb6.org.br/wp-content/uploads/2012/10/Biblioteca-Nacional.jpg"
+COFRE = "https://loja.yale.com.br/media/catalog/product/cache/1/image/1540x1540/9df78eab33525d08d6e5fb8d27136e95/m/i/mini-cofre-digital-azul-travas-em-aco-macico-yale-1.jpg"
+PENDRIVE = "https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-blue-usb-flash-drive-illustration-image_1395096.jpg"
+CANECA ="https://cdn.iset.io/assets/51664/produtos/78/thumb_514-489-caneca_amarela_360ml_sublimatica_inktexx.png"
+#TABELA?
+TUBO_DE_ENSAIO = "https://png.pngtree.com/png-clipart/20190328/ourlarge/pngtree-elements-in-chemical-experiment-bottles-and-cans-png-image_890914.jpg"
+
+
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
