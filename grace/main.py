@@ -17,11 +17,11 @@ TABELA = "https://imgur.com/sotDlmO.png"
 FIOCRUZ = "https://upload.wikimedia.org/wikipedia/commons/d/db/Castelo_fiocruz.JPG"
 BIBLIOTECA = "http://blog.crb6.org.br/wp-content/uploads/2012/10/Biblioteca-Nacional.jpg"
 COFRE = "https://loja.yale.com.br/media/catalog/product/cache/1/image/1540x1540/9df78eab33525d08d6e5fb8d27136e95/m/i/mini-cofre-digital-azul-travas-em-aco-macico-yale-1.jpg"
-PENDRIVE = "https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-blue-usb-flash-drive-illustration-image_1395096.jpg"
+PENDRIVE = "https://www.dhresource.com/0x0s/f2-albu-g5-M01-5B-FD-rBVaJFmJbNGAeStNAAF1MwnetgM037.jpg/unidade-usb-flash-sliver-otg-pendrive-128.jpg"
 CANECA ="https://cdn.iset.io/assets/51664/produtos/78/thumb_514-489-caneca_amarela_360ml_sublimatica_inktexx.png"
-#TABELA?
-TUBO_DE_ENSAIO = "https://png.pngtree.com/png-clipart/20190328/ourlarge/pngtree-elements-in-chemical-experiment-bottles-and-cans-png-image_890914.jpg"
-
+TUBO_DE_ENSAIO = "https://www.prolab.com.br/wp-content/uploads/2014/10/1-Tubosdeensaio.jpg"
+RELOGIO = "https://img.kalunga.com.br/FotosdeProdutos/660992d.jpg"
+QUADRO = "https://lojaminasdepresentes.com.br/media/catalog/product/cache/1/thumbnail/1200x1400/9df78eab33525d08d6e5fb8d27136e95/y/w/ywb-1825wt_3_.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
