@@ -172,13 +172,19 @@ class EntenderHerdeitariedade:
     def codigo(self, valor):
         self.senha+=valor
         abriu = ", você abriu o cofre" if self.senha == "43637" else ", mas a senha está errada"
-        abre = self.abre if self.senha == "43637", else lambda *_: None
+        abre = self.abre if self.senha == "43637" else lambda *_: None
         if len(self.senha) >4:
             #senha = "".join(self.senha)
-            Texto(self.fc, f"Você digitou a senha {self.senha}"{abriu}, foi = abre).vai()
+            Texto(self.fc, f"Você digitou a senha {self.senha}{abriu}", foi = abre).vai()
         
-    def abre(self, valor):
-        self.tecla = Elemento(COFREABERTO, x=0, y=0, w=850, h=650, cena=self.fc,vai=self.pista)
+    def abre(self, *_):
+        self.aberto = Elemento(COFREABERTO, x=-50, y=-50, w=950, h=750, cena=self.fc)
+        self.pendrive = Elemento(PENDRIVE, x=600, y=500, w=150, h=150, cena=self.fc,vai=self.pen)
+        
+        
+    def vai(self, *_):
+        Texto(self.fc, "Você pega o pendrive e guarde no bolso").vai()
+        
         
         
 
