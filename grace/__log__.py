@@ -156,3 +156,10 @@ NameError: name 'p' is not defined
     self.ajuda = Elemento(COFRE, x=100, y=100, w=150, h=150, cena=self.fc,vai=self.pista)
 AttributeError: 'EntenderHerdeitariedade' object has no attribute 'pista'
 '''},
+{'date': 'Sat Nov 09 2019 12:12:03.759 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 169
+  self.ks = [Elemento(FOCO, x=80+k%3 *260, y=50+k//3*150, w=190, h=120, style =style
+                                                                                                  ^
+SyntaxError: invalid syntax
+'''},
