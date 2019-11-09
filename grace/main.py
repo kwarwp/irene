@@ -157,7 +157,7 @@ class EntenderHerdeitariedade:
         self.tabela = Elemento(COFREABERTO, x=720, y=130, w=60, h=60, cena=self.fc)
         # self.ajuda.elt.style.opacity = 0.01
         self.inicia = self.vai
-        self.senha = []
+        self.senha = ""
         
     def vai(self, *_):
         self.fc.vai()
@@ -165,8 +165,9 @@ class EntenderHerdeitariedade:
         
     def pista(self, *_):
         self.tecla = Elemento(TECLACOFRE, x=0, y=0, w=850, h=650, cena=self.fc,vai=self.pista)
-        [Elemento(FOCO, x=0+k%3 *200, y=0+k//3*200, w=850, h=650, 
-            cena=self.fc,vai=lambda *_:self.codigo(str(k))) for k in range(10)]
+        style = dict(opacity=0.1)
+        self.ks = [Elemento(FOCO, x=80+k%3 *260, y=50+k//3*150, w=190, h=120, style =style,
+            cena=self.fc,vai=lambda *_, i=k:self.codigo(str(i+1))) for k in range(9)]
         
     def codigo(self, valor):
         self.senha+=valor
