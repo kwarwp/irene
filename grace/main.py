@@ -25,7 +25,7 @@ QUADRO = "https://i.imgur.com/b2TqQsA.png"
 microscopio = "https://i.imgur.com/q414omp.png"
 GAVETA = "https://i.imgur.com/85Cta7F.jpg"
 ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
-COFREABERTO = "https://i.imgur.com/7zvQ6PZ.jpg"
+COFREABERTO = "https://i.imgur.com/mgL4Gp2.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -152,7 +152,7 @@ class EntenderHerdeitariedade:
     """    
     def __init__(self):
         self.fc = Cena(ESCRITORIO, direita=self, meio=self, esquerda=self)
-        self.ajuda = Elemento(COFRE, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
+        self.ajuda = Elemento(COFRE, x=120, y=80, w=250, h=250, cena=self.fc,vai=self.pista)
         self.tabela = Elemento(COFREABERTO, x=720, y=130, w=60, h=60, cena=self.fc)
         # self.ajuda.elt.style.opacity = 0.01
         self.inicia = self.vai
@@ -160,6 +160,12 @@ class EntenderHerdeitariedade:
     def vai(self, *_):
         self.fc.vai()
         Texto(self.fc, "Você chegou ao lab do Dr.Frederick, procure pistas da fórmula").vai()
+        
+    def pista(self, *_):
+        self.ajuda.elt.style.left = -400
+        self.ajuda.elt.style.top = -400
+        self.ajuda.elt.style.width = 1400
+        self.ajuda.elt.style.height = 1400
 
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
