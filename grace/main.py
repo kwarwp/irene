@@ -153,7 +153,7 @@ class EntenderHerdeitariedade:
     """    
     def __init__(self):
         self.escritorio()
-        self.abre()
+        #self.abre()
         
     def escritorio(self, *_):
         self.fc = Cena(ESCRITORIO, direita=self, meio=self, esquerda=self)
@@ -176,18 +176,25 @@ class EntenderHerdeitariedade:
     def codigo(self, valor):
         self.senha+=valor
         abriu = ", você abriu o cofre" if self.senha == "43637" else ", mas a senha está errada"
-        abre = self.abre if self.senha == "43637" else lambda *_: None
+        abre = self.abre if self.senha == "43637" else self.mostra
         if len(self.senha) >4:
             #senha = "".join(self.senha)
             Texto(self.fc, f"Você digitou a senha {self.senha}{abriu}", foi = abre).vai()
         
     def abre(self, *_):
+        self.mostra()
         self.aberto = Elemento(COFREABERTO, x=-50, y=-50, w=950, h=750, cena=self.fc)
-        self.pendrive = Elemento(PENDRIVE, x=500, y=400, w=150, h=150, cena=self.fc,vai=self.pen)
+        self.pendrive = Elemento(PENDRIVE, x=300, y=360, w=150, h=150, cena=self.fc,vai=self.pen)
         
+    def mostra(self, *_):
+        self.escritorio()
+        self.fc.vai()
         
     def pen(self, *_):
-        Texto(self.fc, "Você pega o pendrive e guarde no bolso", foi=self.escritorio).vai()
+        def escritorio(*_):
+            self.escritorio()
+            self.fc.vai()
+        Texto(self.fc, "Você pega o pendrive e guarde no bolso", foi=self.mostra).vai()
         
         
         
