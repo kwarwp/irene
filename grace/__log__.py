@@ -170,3 +170,10 @@ SyntaxError: invalid syntax
                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Nov 09 2019 12:32:35.348 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 178
+  Texto(self.fc, f"Você digitou a senha {self.senha}"{abriu}, foi = abre).vai()
+                                                      ^
+SyntaxError: invalid syntax
+'''},
