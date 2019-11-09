@@ -221,7 +221,6 @@ class LembrarHerdeitariedade:
         ]
         self.fc = Cena(FREDERICK, direita=self, meio=self, esquerda=self)
         self.tabela = Elemento(TABELA, x=720, y=130, w=60, h=60, cena=self.fc)
-        self.ajuda.elt.style.opacity = 0.01
         self.inicia = self.vai
         self.inicia_pista()
         
@@ -229,6 +228,7 @@ class LembrarHerdeitariedade:
         p = self.codigo[0]
         self.dica = 0
         self.ajuda = Elemento(FOCO, x=p.x, y=p.y, w=150, h=150, cena=self.fc,vai=self.pista)
+        self.ajuda.elt.style.opacity = 0.01
         self.tabela.elt.style.left = 720
         self.tabela.elt.style.top = 130
         self.tabela.elt.style.width = 60
