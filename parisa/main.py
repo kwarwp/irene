@@ -16,7 +16,7 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
-        self.ajuda = Elemento(FOCO, x=30, y=350, width=50, height=50, cena=self.fiocruz, style={"opacity": 0.3}, vai=self._ajuda)
+        self.ajuda = Elemento(FOCO, x=30, y=350, width=50, height=50, cena=self.fiocruz, style={"opacity": 0.5}, vai=self._ajuda)
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
@@ -40,11 +40,11 @@ class LembrarHerdeitariedade:
     
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0.3}, vai=self._ajuda)
+        self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0.5}, vai=self._ajuda)
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        Texto(self.fiocruz, "Olha a fórmula está ").vai()
+        Texto(self.fiocruz, "A fórmula? Tem a ver com 4-4? Daqui a pouco mais.").vai()
     
     def inicia(self):
         """ Muada para o laboratório """
