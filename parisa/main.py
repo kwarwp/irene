@@ -17,7 +17,7 @@ class FioCruz:
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=50, y=350, w=50, h=50, cena=self.fiocruz, style={"opacity": 0.5}, vai=self._ajuda)
-        self.irProLab = Elemento(FOCO, x=800, y=600, cena=self.fiocruz, style={"opacity": 1})
+        self.irProLab = Elemento(FOCO, x=700, y=500, cena=self.fiocruz, style={"opacity": 1})
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
