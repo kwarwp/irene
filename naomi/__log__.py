@@ -111,3 +111,10 @@ SyntaxError: invalid syntax
                                                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 10:54:37.859 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"capacity":0},vai=self._ajuda})
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
