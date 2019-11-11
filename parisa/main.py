@@ -82,7 +82,7 @@ class LembrarHerdeitariedade:
         """ Ela diz que não é a denise """
         Texto(self.lab, "A Denise está do outro lado.").vai()
     
-    def inicia(self):
+    def inicia(self, _=0):
         """ Muada para o laboratório """
         self.lab.vai()
         Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar à alguem").vai()
