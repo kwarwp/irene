@@ -43,7 +43,8 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 0})
         self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, vai=self._ajuda25_1)
-        self.maria = Elemento(FOCO, x=630, y=170, cena=self.lab, style={"opacity": 1},vai=self._ajuda2_2)  
+        self.maria = Elemento(FOCO, x=630, y=180, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
+        self.joana = Elemento(FOCO, x=700, y=180, cena=self.lab, style={"opacity": 0},vai=self._joana)
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar formula """
@@ -65,7 +66,11 @@ class LembrarHerdeitariedade:
         
     def _ajuda2_2(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
-        Texto(self.lab, "Ele só me falava da importancia de duas pessoas ficarem juntas. Como ele sempre fez aqui no laboratório, ficavamos sempre em duplas").vai()
+        Texto(self.lab, "Ele só me falava da importancia de duas pessoas ficarem juntas. Como ele sempre fez aqui no laboratório, ficavamos sempre em duplas. Será o que isso significa ? Não consigo entender se isso é um código... O que voce pensa Joana ?").vai()
+    
+    def _ajudajoana(self, _=0):
+        """O personagem dá uma explicação de como encontrar a formula """
+        Texto(self.lab, "Tão inteligente para umas coisas... Maria, é claro que o código é 2-2").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
