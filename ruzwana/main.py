@@ -8,6 +8,7 @@ STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
+CANECA ="https://i.imgur.com/El0wysJ.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -38,11 +39,12 @@ class LembrarHereditariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO,x=130,y=100, cena=self.lab, style={"opacity": 1}, vai=self._ajuda)
         self.denise = Elemento(FOCO,x=260,y=140, cena=self.lab, style={"opacity": 1})
+        self.caneca = Elemento(CANECA,x=740,y=480, cena=self.lab, style={"opacity": 1})
 
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
-        self._ajuda.vai=self._ajuda5_1()
+        self._ajuda.vai=self._ajuda5_1
         Texto(self.lab,"A fórmula tem a ver com 4-4? Daqui a pouco lembro mais.").vai()
 
     def _ajuda5_1(self, _=0):
