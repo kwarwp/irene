@@ -192,3 +192,6 @@ GAVETA = "https://i.imgur.com/85Cta7F.jpg"
 ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
 COFREABERTO = "https://i.imgur.com/mgL4Gp2.png"
 TECLACOFRE = "https://i.imgur.com/9NiaFGL.png"
+CAIXAMETAL = "https://loja.mediapack.com/studio/imagem.php?img=/client/files/0000000001/01010029_a.jpg&w=565&h=455&t=1"
+
+
