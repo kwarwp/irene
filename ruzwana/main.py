@@ -24,11 +24,6 @@ class FioCruz:
         self.fiocruz.vai()
         Texto(self.fiocruz,"Temos que achar o laboratório. vamos perguntar a alguém").vai()
 
-if __name__ == "__main__":
-    fc = LembrarHereditariedade() #FioCruz()
-    fc.inicia()
-    fc.ajuda()
-
 class LembrarHereditariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
     seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
@@ -52,3 +47,8 @@ class LembrarHereditariedade:
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.lab.vai()
         Texto(self.lab,"Temos que achar a fórmula. vamos perguntar a alguém").vai()
+
+if __name__ == "__main__":
+    fc = LembrarHereditariedade() #FioCruz()
+    fc.inicia()
+    fc.ajuda()
