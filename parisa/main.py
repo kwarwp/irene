@@ -45,7 +45,7 @@ class LembrarHerdeitariedade:
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        Texto(self.fiocruz, "A fórmula? Tem a ver com 4-4? Daqui a pouco mais.").vai()
+        Texto(self.lab, "A fórmula? Tem a ver com 4-4? Daqui a pouco mais.").vai()
     
     def inicia(self):
         """ Muada para o laboratório """
