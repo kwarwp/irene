@@ -9,7 +9,7 @@ FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
 CANECA ="https://i.imgur.com/El0wysJ.png"
-
+PENDRIVE = "https://i.imgur.com/18dBApo.png"
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
@@ -45,6 +45,8 @@ class LembrarHerdeitariedade:
              style={"opacity": 1})
         self.caneca = Elemento(CANECA, x=260, y=340, cena=self.lab,
              style={"opacity": 1})
+        self.PENDRIVE = Elemento(PENDRIVE, x=280, y=320, cena=self.lab,
+             style={"opacity": 1})     
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar fórmula """
