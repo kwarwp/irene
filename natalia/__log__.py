@@ -96,3 +96,10 @@ SyntaxError: non-keyword arg after keyword arg
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 12:02:57.568 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  self.PENDRIVE = self._ajuda3_3
+  ^
+IndentationError: unexpected indent
+'''},
