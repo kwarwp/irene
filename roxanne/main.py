@@ -15,7 +15,7 @@ class FioCruz:
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz,
         style={"opacity":0},vai=self._ajuda)
 
-def inicia(self):
+    def inicia(self):
         """O personagem dá uma explicação  de como encontrar o lab """
         Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
