@@ -38,6 +38,7 @@ class LembrarHereditariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise _ Elemento(Foco, x=230, y=100, cena=self.lab, style={"opacity": 1})
+        self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab, style={"opacity": 1})
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
