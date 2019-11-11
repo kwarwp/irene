@@ -19,7 +19,7 @@ class FioCruz:
 		self.fiocruz.vai()
 		Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
         
-	def mostrarAjuda(self):
+	def mostrarAjuda(self, evento):
 		Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
 if __name__ == "__main__":
