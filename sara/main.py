@@ -8,6 +8,7 @@ STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg" #"https://i.imgur.com/377duSy.jpg"
+CANECA ="https://i.imgur.com/El0wysJ.png"
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
