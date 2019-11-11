@@ -12,11 +12,12 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
+        self.ajuda = Elemento(FOCO, cena=self.fiocruz)
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        
+        TExto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
 if __name__ == "__main__":
 	fc = FioCruz()
 	fc.inicia()
