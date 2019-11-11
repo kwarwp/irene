@@ -61,7 +61,7 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 0})
         self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, vai=self._ajuda25_1)
-        self.maria = Elemento(FOCO, x=635, y=160, cena=self.lab, style={"opacity": 1},vai=self._ajuda2_2)
+        self.maria = Elemento(FOCO, x=635, y=160, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
         self.joana = Elemento(FOCO, x=770, y=150, cena=self.lab, style={"opacity": 0},vai=self._ajudajoana)
         
     def _ajuda(self, _=0):
@@ -76,7 +76,9 @@ class LembrarHerdeitariedade:
         
     def _ajuda3_2(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
+        self.quadro.vai = self._ajuda25_1
         Texto(self.lab, "O professor me falou o código 3-2. Ele gostava muito de rabiscar no quadro").vai()
+        
         
     def _ajuda25_1(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
