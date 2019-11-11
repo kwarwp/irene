@@ -68,3 +68,10 @@ TypeError: 'Elemento' object is not callable
     fc.ajuda()
 TypeError: 'Elemento' object is not callable
 '''},
+{'date': 'Mon Nov 11 2019 11:46:00.592 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  self.caneca = Elemento(CANECA, x=x=740, y=480, cena=self.lab,
+                                                                                                  ^
+SyntaxError: invalid syntax
+'''},
