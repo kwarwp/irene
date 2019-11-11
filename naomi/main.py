@@ -12,7 +12,7 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
 	self.fiocruz = Cena(FIOCRUZ)
-	self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"capacity":0},vai=self._ajuda)
+	self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity":0},vai=self._ajuda)
         
         
     def ajuda(self, _=0):
