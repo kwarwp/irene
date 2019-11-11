@@ -17,7 +17,7 @@ class FioCruz:
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
         
-if __name__ = "__main__":
+if __name__ == "__main__":
 ft = FioCruz()
 ft.inicia
 
