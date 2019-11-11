@@ -36,13 +36,18 @@ class LembrarHereditariedade:
     def __init__(self):
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
-        self.denise _ Elemento(Foco, x=230, y=100, cena=self.lab, style={"opacity": 1},vai=self._ajuda)
+        self.denise _ Elemento(Foco, x=230, y=100, cena=self.lab, style={"opacity": 1})
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
+        self.ajuda.vai = self.ajuda5_1
         Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
         
     def _ajuda5_1(self, _=0):
+        """O personagem dá uma explicação de como encontrar o laboratório """
+        Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
+        
+    def _ajuda3_2(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
         Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
     def inicia(self):
