@@ -17,13 +17,16 @@ class FioCruz:
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=70, y=400, w=50, h=50, cena=self.fiocruz, style={"opacity": 0.3}, vai=self._ajuda)
-        self.irProLab = Elemento(FOCO, x=570, y=330, cena=self.fiocruz, style={"opacity": 0})
+        self.irProLab = Elemento(FOCO, x=570, y=330, cena=self.fiocruz, style={"opacity": 0.3})
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
         # self.fiocruz.irProlab.style["opacity"] = 0.3
         self.fiocruz.irProLab = LembrarHerdeitariedade()
         Texto(self.fiocruz, "O laboratório está na direita.").vai()
+        
+    def _irProLab(self, _=0):
+        self.fiocruz.irProlab.inicia()
         
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
