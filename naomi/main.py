@@ -59,6 +59,11 @@ class LembrarHerdeitariedade:
     def _ajuda3_2(self, _=0):
         """O personagem dá uma nova explicação de como encrontrar o lab """
         Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
+        
+    def inicia(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
 
 
 if __name__ == "__main__":
@@ -66,6 +71,7 @@ if __name__ == "__main__":
     fc.inicia()
     
 #####################################################################################################
+
 class EntenderHerdeitariedade:
     """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
     estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
