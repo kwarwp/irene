@@ -95,7 +95,11 @@ class LembrarHerdeitariedade:
         self.lab.vai()
         Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
 
-
+    def vai(self):
+        """O jogo inicia aqui. O cenário principal será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+        
 if __name__ == "__main__":
     #fc = LembrarHerdeitariedade() #FioCruz()
     fc = FioCruz()
