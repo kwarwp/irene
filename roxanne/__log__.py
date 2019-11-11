@@ -13,3 +13,10 @@ SyntaxError: non-keyword arg after keyword arg
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Nov 11 2019 10:41:39.708 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  ""O personagem dá uma explicação  de como encontrar o lab ""
+  ^
+IndentationError: expected an indented block
+'''},
