@@ -22,6 +22,22 @@ class FioCruz:
         self.fiocruz.vai()
         Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!").vai()
 
+class LembrarHereditariedade:
+        """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório seu fiel 
+        amigo e aprendiz Damon"""
+    def __init__(self):
+        self.fiocruz = Cena(FREDERICK)
+        self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 1},vai=self._ajuda)
+        
+    def _ajuda(self, _=0):
+        """O personagem dá uma explicação de como encontrar o laboratório """
+        Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+        
+    def inicia(self):
+        """O jogo inicia aqui. O cenário principal será apresentado """
+        self.fiocruz.vai()
+        Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!").vai()
+        
 if __name__ == "__main__":
     fc = FioCruz()
     fc.inicia()
