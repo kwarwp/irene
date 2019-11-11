@@ -82,3 +82,10 @@ SyntaxError: invalid syntax
                           ^
 SyntaxError: non-keyword arg after keyword arg
 '''},
+{'date': 'Mon Nov 11 2019 12:00:29.149 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 49
+  style={"opacity": 1},vai)     
+                          ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
