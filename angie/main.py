@@ -4,10 +4,6 @@
 __author__ = "<César Bastos (RJ)>"
 __version__ = "19.11.11"
 # irene.roxanne.main.py
-"""Planejamento do jogo da Genética JAIE19
-"""
-__author__ = "<O seu nome aqui>"
-__version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
@@ -48,11 +44,8 @@ class LembrarHerdeitariedade:
              style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
              style={"opacity": 1})
-        self.caneca = Elemento(CANECA, x=740, y=380, cena=self.lab,
+        self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
              style={"opacity": 1})
-        self.caixametal = Elemento(CAIXAMETAL, x=300, y=380, cena=self.lab,
-             style={"opacity": 1})    
-             
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar fórmula """
@@ -96,7 +89,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
@@ -199,6 +192,3 @@ GAVETA = "https://i.imgur.com/85Cta7F.jpg"
 ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
 COFREABERTO = "https://i.imgur.com/mgL4Gp2.png"
 TECLACOFRE = "https://i.imgur.com/9NiaFGL.png"
-CAIXAMETAL = "https://loja.mediapack.com/studio/imagem.php?img=/client/files/0000000001/01010029_a.jpg&w=565&h=455&t=1"
-
-
