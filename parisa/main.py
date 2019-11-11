@@ -40,7 +40,7 @@ class LembrarHerdeitariedade:
     
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.ajuda = Elemento(FOCO, x=150, y=80, cena=self.lab, style={"opacity": 0.3}, vai=self._ajuda)
+        self.ajuda = Elemento(FOCO, x=140, y=80, cena=self.lab, style={"opacity": 0.3}, vai=self._ajuda)
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
