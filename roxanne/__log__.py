@@ -73,3 +73,10 @@ SyntaxError: invalid syntax
                                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 10:57:08.956 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  """O personagem dá uma explicação de como encontrar o lab """
+  ^
+IndentationError: expected an indented block
+'''},
