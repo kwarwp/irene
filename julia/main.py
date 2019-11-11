@@ -21,8 +21,7 @@ class FioCruz:
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar o lab """
         self.fiocruz.direita = LembrarHerdeitariedade()
-        Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
-        
+        Texto(self.fiocruz, "O laboratório? Siga pela direita").vai()
         
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
