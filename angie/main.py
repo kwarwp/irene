@@ -34,7 +34,7 @@ class LembrarHerdeitariedade:
     Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
     Na verdade, adaptei para perguntar a pessoas que já estavam na cena
     """
-        def __init__(self)
+        def __init__(self):
         self.fiocruz = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.lab, vai=self._ajuda)
 
