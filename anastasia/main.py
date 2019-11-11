@@ -2,7 +2,7 @@
 # irene.roxanne.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "<escreva seu nome>"
+__author__ = "Reisla Rodrigues"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
@@ -39,7 +39,8 @@ class EntenderHerdeitariedade:
     para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
     
     Imagens: cena lab, cofre, pendrive, tabela
-    """    
+    """            Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+
 
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
@@ -60,7 +61,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
