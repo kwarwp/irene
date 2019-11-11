@@ -71,3 +71,10 @@ NameError: name 'se' is not defined
     se
 NameError: name 'se' is not defined
 '''},
+{'date': 'Mon Nov 11 2019 10:41:19.93 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  def inicia(self)
+                   ^
+SyntaxError: invalid syntax
+'''},
