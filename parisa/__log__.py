@@ -78,3 +78,10 @@ NameError: name 'se' is not defined
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 10:41:36.55 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  """ O personagem dá uma explicação de como encontrar o lab. """
+  ^
+IndentationError: expected an indented block
+'''},
