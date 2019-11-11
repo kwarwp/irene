@@ -47,7 +47,9 @@ class LembrarHerdeitariedade:
     def __init__(self):
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
-        self.denise = Elemento(FOCO, x=280, y=150, cena=self.lab, style={"opacity": 1})
+        self.denise = Elemento(FOCO, x=280, y=150, cena=self.lab, style={"opacity": 0})
+        self.luisa = Elemento(FOCO, x=500, y=170, cena=self.lab, style={"opacity": 1})
+        self.amanda = Elemento(FOCO, x=700, y=150, cena=self.lab, style={"opacity": 1})
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
@@ -61,7 +63,7 @@ class LembrarHerdeitariedade:
         
     def _ajuda3_2(self, _=0):
         """ A Denise dá uma explicação de como encontrar o lab. """
-        Texto(self.lab, "O código que você precisa é o 3-2. Meu professor pode saber mais. Ele gosta muito de café.").vai()
+        Texto(self.lab, "O código que você precisa é o 3-2. Talvez a Heisla, que está do outro lado, saiba mais...").vai()
     
     def inicia(self):
         """ Muada para o laboratório """
