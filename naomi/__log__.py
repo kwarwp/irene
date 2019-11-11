@@ -369,3 +369,10 @@ IndentationError: expected an indented block
     fc.inicia()
 AttributeError: 'LembrarHerdeitariedade' object has no attribute 'inicia'
 '''},
+{'date': 'Mon Nov 11 2019 13:25:48.416 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  def inicia(self):
+  ^
+IndentationError: unexpected indent
+'''},
