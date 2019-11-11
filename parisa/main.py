@@ -48,8 +48,8 @@ class LembrarHerdeitariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
         self.denise = Elemento(FOCO, x=280, y=150, cena=self.lab, style={"opacity": 0})
-        self.raquel = Elemento(FOCO, x=630, y=180, cena=self.lab, style={"opacity": 1})
-        self.amanda = Elemento(FOCO, x=780, y=150, cena=self.lab, style={"opacity": 1})
+        self.raquel = Elemento(FOCO, x=630, y=180, cena=self.lab, style={"opacity": 0})
+        self.amanda = Elemento(FOCO, x=780, y=150, cena=self.lab, style={"opacity": 0})
 
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
@@ -75,7 +75,7 @@ class LembrarHerdeitariedade:
         
     def _raquel(self, _=0):
         """ A Raquel diz que não é a Amanda. """
-        Texto(self.lab, "Eu não sou a Amanda. É a moça do meu lado.").vai()
+        Texto(self.lab, "Eu sou a Raquel. A Raquel é a moça do meu lado.").vai()
         
     def _ajuda2_2(self, _=0):
         """ A Amanda diz a última pista """
