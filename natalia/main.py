@@ -1,48 +1,30 @@
 # irene.natalia.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "<César Bastos>"
+__author__ = "<O seu nome aqui>"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
-TABELA = "https://imgur.com/sotDlmO.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
-BIBLIOTECA = "https://i.imgur.com/e6Oc9xU.jpg"
+FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
-        self.ajuda = Elemento(FOCO,x=30,y=350, cena=self.fiocruz, vai=self._ajuda)
-
+        self.ajuda = Elemento(FOCO, x=0, y=350, cena=self.fiocruz,
+             style={"opacity": 0},vai=self._ajuda)
 
     def _ajuda(self, _=0):
-        """O personagem dá uma explicação de como encontrar o laboratório """
-        Texto(self.fiocruz,"O laboratório? Siga pela esquerda").vai()
-        
+        """O personagem dá uma explicação de como encrontrar o lab """
+        Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz,"Temos que achar o laboratório. vamos perguntar a alguém").vai()
+        Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
 
-
-if __name__ == "__main__":
-    fc = FioCruz()
-    fc.inicia()
-    fc.ajuda()
-    
-    #####################################################################################################
-
-class EntenderHerdeitariedade:
-    """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
-    estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
-    e pegue esse pen drive, mas lembre-se que tem pessoas interessadas em roubar a fórmula, por isso
-    o pen drive possui uma senha que você terá que ser desvendada através da tabela que você usou
-    para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
-    
-    Imagens: cena lab, cofre, pendrive, tabela
-    """    
 
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
@@ -54,6 +36,34 @@ class LembrarHerdeitariedade:
     Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
     Na verdade, adaptei para perguntar a pessoas que já estavam na cena
     """
+    def __init__(self):
+        self.lab = Cena(FREDERICK)
+        self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab,
+             style={"opacity": 1},vai=self._ajuda)
+
+    def _ajuda(self, _=0):
+        """O personagem dá uma explicação de como encrontrar o lab """
+        Texto(self.lab, "O fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+
+    def inicia(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+
+if __name__ == "__main__":
+    fc = LembrarHerdeitariedade() #FioCruz()
+    fc.inicia()
+#####################################################################################################
+
+class EntenderHerdeitariedade:
+    """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
+    estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
+    e pegue esse pen drive, mas lembre-se que tem pessoas interessadas em roubar a fórmula, por isso
+    o pen drive possui uma senha que você terá que ser desvendada através da tabela que você usou
+    para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
+    
+    Imagens: cena lab, cofre, pendrive, tabela
+    """    
 
 #Inicio Jogo 1
 class LembraGene:
