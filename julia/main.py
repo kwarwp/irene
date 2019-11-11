@@ -9,6 +9,7 @@ FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
 CANECA ="https://i.imgur.com/El0wysJ.png"
+microscopio = "https://i.imgur.com/q414omp.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -42,8 +43,10 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab,
              style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
+             style={"opacity": 0})
+        self.caneca = Elemento(CANECA, x=740, y=490, cena=self.lab,
              style={"opacity": 1})
-        self.caneca = Elemento(CANECA, x=740, y=300, cena=self.lab,
+        self.microscopio = Elemento(microscopio, x=190, y=470, cena=self.lab,
              style={"opacity": 1})
 
     def _ajuda(self, _=0):
@@ -63,7 +66,7 @@ class LembrarHerdeitariedade:
     
     def _ajuda4_2(self, _=0):
         """O personagem dá uma nova explicação de como encontrar o lab """
-        Texto(self.lab, "Procure o código 4-2 outro objeto da minha cor? ").vai()
+        Texto(self.lab, "Procure o código 4-2?. Procure o código que torna tudo muito maior ").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O laboratório será apresentado """
