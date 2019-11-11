@@ -43,7 +43,7 @@ class LembrarHerdeitariedade:
              style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
              style={"opacity": 1})
-        self.caneca = Elemento(CANECA, x=740, y=300, cena=self.lab,
+        self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
              style={"opacity": 1})
 
     def _ajuda(self, _=0):
@@ -88,7 +88,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
