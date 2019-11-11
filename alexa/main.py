@@ -44,7 +44,7 @@ class Laboratorio:
 
     def ajuda_personagem(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
-        Texto(self.lab, "É a 4-4? Não estou lembrando...").vai()
+        Texto(self.lab, "Eu acredito que o cientista falou algo de 4-4, mas não estou lembrando do restante...").vai()
         
 
     def inicia(self):
