@@ -47,18 +47,10 @@ class LembrarHerdeitariedade:
         self.fiocruz.vai()
         Texto(self.lab, "Temos que achar a formula. Vamos perguntar a alguém. Feche este texto e clique na bolota!").vai()
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
 
 if __name__ == "__main__":
-    fc = FioCruz()
+    fc = LembrarHerdeitariedade()
     fc.inicia()
 #####################################################################################################
 
@@ -72,16 +64,7 @@ class EntenderHerdeitariedade:
     Imagens: cena lab, cofre, pendrive, tabela
     """    
 
-class LembrarHerdeitariedade:
-    """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
-    seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
-    porém seu amigo antes de morrer disse-lhe "botei a fórmula dentro deste cofre, cujo a senha é formada
-    por letras, que estão espalhadas em meu laboratório.". Existe uma tabela deixada pelo cientitsa para
-    decifrar quais letras formam a palavra-chave (4-4, 5-1, 3-2, 5-1, 2-2= GENES). 
-    
-    Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
-    Na verdade, adaptei para perguntar a pessoas que já estavam na cena
-    """
+
 
 #Inicio Jogo 1
 class LembraGene:
