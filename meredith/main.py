@@ -53,13 +53,24 @@ class LembrarHerdeitariedade:
         self.ajuda.vai = self._ajuda5_1
         Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
 
+    def _ajuda5_2(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.ajuda.vai = self._ajuda3_3
+        Texto(self.lab, "Cafe é muito bom.").vai()
+        
     def _ajuda5_1(self, _=0):
         """O personagem dá uma nova explicação de como encrontrar o lab """
         self.denise.vai = self._ajuda3_2
         Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
+        
+   def _ajuda3_3(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.caneca.vai = self._ajuda5_2
+        Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
 
     def _ajuda3_2(self, _=0):
         """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.caneca.vai = self._ajuda5_2
         Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
 
     def inicia(self):
@@ -96,7 +107,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
