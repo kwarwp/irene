@@ -15,11 +15,11 @@ def __init__(self):
 	self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.lab, style={"opacity":0},vai=self._ajuda)
         
         
-    def ajuda(self, _=0):
+def ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o la"""
         Texto=(self.fiocruz, "O laboratório? Pela esquerda.").vai()
 
-    def inicia(self):
+def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
         Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém?").vai()
