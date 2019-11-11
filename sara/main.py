@@ -25,7 +25,7 @@ class FioCruz:
         Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!").vai()
 
 class LembrarHereditariedade:
-        """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
+    """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
     seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
     porém seu amigo antes de morrer disse-lhe "botei a fórmula dentro deste cofre, cujo a senha é formada
     por letras, que estão espalhadas em meu laboratório.". Existe uma tabela deixada pelo cientitsa para
