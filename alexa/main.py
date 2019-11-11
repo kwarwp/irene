@@ -14,7 +14,8 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
-        self.dica_inicial = Elemento(FOCO, x=30, y=360, cena=self.fiocruz, vai=self.ajuda_personagem)
+        self.dica_inicial = Elemento(FOCO, x=30, y=360, cena=self.fiocruz, 
+            style={"opacity: 0.1"}, vai=self.ajuda_personagem)
 
     def ajuda_personagem(self, _=0):
         """O personagem dará uma dica de como encontrar o lab."""
