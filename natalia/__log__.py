@@ -145,3 +145,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 12:14:53.512 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  self.PENDRIVE.vai = self._ajuda3_2
+  ^
+IndentationError: unexpected indent
+'''},
