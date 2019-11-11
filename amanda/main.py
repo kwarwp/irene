@@ -61,6 +61,11 @@ class LembrarHerdeitariedade:
         """O personagem dá uma explicação de como encontrar a formula """
         Texto(self.lab, "Olha só o código 5-1 ! Tem também um nome... Maria").vai()
         
+    def inicia(self):
+        """O jogo inicia aqui. O cenário principal será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+
 
 if __name__ == "__main__":
     fc = LembrarHerdeitariedade()
