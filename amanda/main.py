@@ -49,17 +49,17 @@ class LembrarHerdeitariedade:
         Texto(self.lab, "A fórmula ? Tem a ver com 4-4. Daqui a pouco lembro mais.").vai()
 
     def _ajuda5_1(self, _=0):
-        """O personagem dá uma explicação de como encontrarlaboratório """ self.denise.vai = self._ajuda3_2
+        """O personagem dá uma explicação de como encontrar a formula """ self.denise.vai = self._ajuda3_2
         Texto(self.lab, "Lembrei ! Tem 5-1. A Denise deve saber mais").vai()
         
     def _ajuda3_2(self, _=0):
-        """O personagem dá uma explicação de como encontrarlaboratório """
+        """O personagem dá uma explicação de como encontrar a formula """
         Texto(self.lab, "O professor me falou o código 3-2. Ele gostava muito de rabiscar no quadro").vai()
         
-    def inicia(self):
-        """O jogo inicia aqui. O laborório será apresentado """
-        self.lab.vai()
-        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+    def _ajuda25_1(self, _=0):
+        """O personagem dá uma explicação de como encontrar a formula """
+        Texto(self.lab, "Olha só o código 5-1 ! Tem também um nome... Maria").vai()
+        
 
 if __name__ == "__main__":
     fc = LembrarHerdeitariedade()
