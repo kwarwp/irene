@@ -17,8 +17,8 @@ class FioCruz:
         self.dica_inicial = Elemento(FOCO, x=30, y=360, cena=self.fiocruz, vai=self.ajuda_personagem)
 
     def ajuda_personagem(self, _=0):
-        """O personagem dará umadica de como encontrar o lab."""
-        Texto(self.fiocruz, "Pra encontrar o lab, você precisa seguir para esquerda...").vai()
+        """O personagem dará uma dica de como encontrar o lab."""
+        Texto(self.fiocruz, "Para encontrar o lab, você precisa seguir para esquerda...").vai()
         
 
     def inicia(self):
