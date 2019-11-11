@@ -15,6 +15,11 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
+        self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz)
+    def _ajuda( self,_=0):
+        """ explicação """
+        Texto(self.fiocruz, "O laboratório?  Siga pela esquerda").vai()
+    
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -55,7 +60,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
