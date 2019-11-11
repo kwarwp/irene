@@ -3,11 +3,17 @@
 """
 __author__ = "<César Bastos (RJ)>"
 __version__ = "19.11.11"
+# irene.roxanne.main.py
+"""Planejamento do jogo da Genética JAIE19
+"""
+__author__ = "<O seu nome aqui>"
+__version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
+CANECA ="https://i.imgur.com/El0wysJ.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -39,11 +45,25 @@ class LembrarHerdeitariedade:
     def __init__(self):
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab,
-             style={"opacity": 1},vai=self._ajuda)
+             style={"opacity": 0},vai=self._ajuda)
+        self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
+             style={"opacity": 1})
+        self.caneca = Elemento(CANECA, x=740, y=380, cena=self.lab,
+             style={"opacity": 1})
 
     def _ajuda(self, _=0):
-        """O personagem dá uma explicação de como encrontrar o lab """
-        Texto(self.lab, "O fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+        """O personagem dá uma explicação de como encrontrar fórmula """
+        self.ajuda.vai = self._ajuda5_1
+        Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+
+    def _ajuda5_1(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.denise.vai = self._ajuda3_2
+        Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
+
+    def _ajuda3_2(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O laboratório será apresentado """
@@ -73,7 +93,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
