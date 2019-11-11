@@ -6,7 +6,7 @@ __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "http://i.imgur.com/6e096Va.png"
-FIOCRUZ = "http://i.imgur.com/pJDYRCt.jpg"
+FIOCRUZ = "http://i.imgur.com/pJDyRCt.jpg"
 
 
 class FioCruz:
@@ -15,6 +15,9 @@ class FioCruz:
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x= 30, y=300, cena=self.fiocruz)
         
+    def inicia(self):
+        """O personagem dá uma explicação de como encontrar o lab"""
+        Texto(self.fiocruz, "O laboratório?Siga pela esquerda").vai
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
