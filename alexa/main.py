@@ -29,10 +29,9 @@ class FioCruz:
         Texto(self.fiocruz, "Precisamos encontrar o lab. Quem tem boca vai a Roma!").vai()
 
 
-if __name__ == "__main__":
-    "fc = FioCruz()"
-    fc = Laboratorio()
-    fc.inicia()
+"""if __name__ == "__main__":
+    fc = FioCruz()
+    fc.inicia()"""
     
 #####################################################################################################
 
@@ -52,3 +51,7 @@ class Laboratorio:
         """Esse é o lab do cientista."""
         self.lab.vai()
         Texto(self.lab, "Já que estamos no lab, agora precisamos encontrar a fórmula!").vai()
+        
+if __name__ == "__main__":
+    lab = Laboratorio()
+    lab.inicia()
