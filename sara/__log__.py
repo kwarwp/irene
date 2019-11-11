@@ -45,3 +45,10 @@ IndentationError: unexpected indent
     self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, vai=self._äjuda)
 AttributeError: 'FioCruz' object has no attribute '_äjuda'
 '''},
+{'date': 'Mon Nov 11 2019 10:43:33.195 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 37
+  def __init__(self):
+  ^
+IndentationError: unexpected indent
+'''},
