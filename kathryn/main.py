@@ -1,7 +1,7 @@
 # irene.kathryn.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "<Cristiane Jorge cristiane.bonfim@ifb.edu.br>"
+__author__ = "<O seu nome aqui>"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
