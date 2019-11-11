@@ -133,3 +133,10 @@ SyntaxError: invalid syntax
     fc.inicia()
 AttributeError: 'LembrarHerdeitariedade' object has no attribute 'inicia'
 '''},
+{'date': 'Mon Nov 11 2019 12:09:06.198 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  def _ajuda(self, _=0):
+  ^
+IndentationError: unexpected indent
+'''},
