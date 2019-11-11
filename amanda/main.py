@@ -90,7 +90,7 @@ class LembrarHerdeitariedade:
     
     def _ajudajoana(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
-        Texto(self.lab, "Joana: Tão inteligente para umas coisas... Maria, é claro que o código é 2-2").vai()
+        Texto(self.lab, "Joana: Tão inteligente para umas coisas... Maria, é claro que o código é 2-2. Vejam lá na tabela que está na bancada o que isto significa").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
