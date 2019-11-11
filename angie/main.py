@@ -47,7 +47,6 @@ class LembrarHerdeitariedade:
         self.fiocruz.vai()
         Texto(self.lab, "Temos que achar a formula. Vamos perguntar a alguém. Feche este texto e clique na bolota!").vai()
 
-        
 
 if __name__ == "__main__":
     fc = LembrarHerdeitariedade()
