@@ -50,6 +50,9 @@ class LembrarHerdeitariedade:
              style={"opacity": 1})
         self.caneca = Elemento(CANECA, x=740, y=380, cena=self.lab,
              style={"opacity": 1})
+        self.caixametal = Elemento(CAIXAMETAL, x=300, y=380, cena=self.lab,
+             style={"opacity": 1})    
+             
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar fórmula """
@@ -196,3 +199,6 @@ GAVETA = "https://i.imgur.com/85Cta7F.jpg"
 ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
 COFREABERTO = "https://i.imgur.com/mgL4Gp2.png"
 TECLACOFRE = "https://i.imgur.com/9NiaFGL.png"
+CAIXAMETAL = "https://loja.mediapack.com/studio/imagem.php?img=/client/files/0000000001/01010029_a.jpg&w=565&h=455&t=1"
+
+
