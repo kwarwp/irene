@@ -18,8 +18,8 @@ class FioCruz:
         self.fiocruz.vai()
         
 if __name__ == "__main__":
-fc = FioCruz()
-fc.inicia()
+	fc = FioCruz()
+	fc.inicia()
 
 
 
