@@ -70,3 +70,10 @@ NameError: name 'Laboratorio' is not defined
                                                                             ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Nov 11 2019 11:52:36.824 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  Texto(self.lab, "Você encontrou um papel com o código 5-1! " + 
+                                                                                                                                                                 ^
+SyntaxError: invalid syntax
+'''},
