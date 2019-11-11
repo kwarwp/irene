@@ -64,6 +64,15 @@ class LembrarHerdeitariedade:
     def _ajuda3_2(self, _=0):
         """ A Denise dá uma explicação de como encontrar o lab. """
         Texto(self.lab, "O código que você precisa é o 3-2. Talvez a Heisla, que está do outro lado, saiba mais...").vai()
+        
+    def _luisa(self, _=0):
+        """ A Luisa diz que não é a Amanda. """
+        Texto(self.lab, "Eu não sou a Amanda. É a moça do meu lado.").vai()
+        
+    def _ajuda2_2(self, _=0):
+        """ A Luisa diz a última pista """
+        self.luisa.vai = None
+        Texto(self.lab, "O último código para você decifrar a palavra-chave é 2-2.").vai()
     
     def inicia(self):
         """ Muada para o laboratório """
