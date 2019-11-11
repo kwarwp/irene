@@ -63,7 +63,7 @@ class LembrarHerdeitariedade:
         self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, vai=self._ajuda25_1)
         self.maria = Elemento(FOCO, x=635, y=160, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
         self.joana = Elemento(FOCO, x=770, y=150, cena=self.lab, style={"opacity": 0},vai=self._ajudajoana)
-        self.tubo_de_ensaio = Elemento(FOCO, x=610, y=50, cena=self.lab, style={"opacity": 1},vai=self._ajudatabela)
+        self.tubo_de_ensaio = Elemento(FOCO, x=600, y=250, cena=self.lab, style={"opacity": 1},vai=self._ajudatabela)
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar formula """
