@@ -48,7 +48,7 @@ class Laboratorio:
         self.dica_persnagem_2 = Elemento(FOCO, x=260, y=140, cena=self.lab, 
             style={"opacity": 0.1})
             
-        self.dica_caneca = Elemento(CANECA, x=500, y=500, cena=self.lab)
+        self.dica_caneca = Elemento(CANECA, x=700, y=500, cena=self.lab)
 
     def ajuda_4_4(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
