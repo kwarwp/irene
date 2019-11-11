@@ -42,6 +42,7 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 0})
         self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, style={"opacity": 1},vai=self._ajuda25_1)
+        self.maria = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 1},vai=self._ajuda2_2)  
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar formula """
@@ -61,6 +62,10 @@ class LembrarHerdeitariedade:
         """O personagem dá uma explicação de como encontrar a formula """
         Texto(self.lab, "Olha só o código 5-1 ! Tem também um nome... Maria").vai()
         
+    def _ajuda2_2(self, _=0):
+        """O personagem dá uma explicação de como encontrar a formula """
+        Texto(self.lab, "Ele só me falava da importancia de duas pessoas ficarem juntas. Como ele sempre fez aqui no laboratório, ficavamos sempre em duplas").vai()
+
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.lab.vai()
