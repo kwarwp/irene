@@ -63,3 +63,10 @@ AttributeError: 'set' object has no attribute '__getitem__'
     fc = Laboratorio()
 NameError: name 'Laboratorio' is not defined
 '''},
+{'date': 'Mon Nov 11 2019 11:31:26.651 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 53
+  Texto(self.lab, "Eu acredito que o cientista falou que começa com 4-4,  + 
+                                                                            ^
+SyntaxError: EOL while scanning string literal
+'''},
