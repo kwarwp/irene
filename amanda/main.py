@@ -77,7 +77,7 @@ class LembrarHerdeitariedade:
     def _ajuda3_2(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
         self.quadro.vai = self._ajuda25_1
-        Texto(self.lab, "O professor me falou o código 3-2. Ele gostava muito de rabiscar no quadro").vai()
+        Texto(self.lab, "Denise: O professor me falou o código 3-2. Ele gostava muito de rabiscar no quadro").vai()
         
         
     def _ajuda25_1(self, _=0):
@@ -86,11 +86,11 @@ class LembrarHerdeitariedade:
         
     def _ajuda2_2(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
-        Texto(self.lab, "Ele só me falava da importancia de duas pessoas ficarem juntas. Como ele sempre fez aqui no laboratório, ficavamos sempre em duplas. Será o que isso significa ? Não consigo entender se isso é um código... O que voce pensa Joana ?").vai()
+        Texto(self.lab, "Maria: Ele só me falava da importancia de duas pessoas ficarem juntas. Como ele sempre fez aqui no laboratório, ficavamos sempre em duplas. Será o que isso significa ? Não consigo entender se isso é um código... O que voce pensa Joana ?").vai()
     
     def _ajudajoana(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
-        Texto(self.lab, "Tão inteligente para umas coisas... Maria, é claro que o código é 2-2").vai()
+        Texto(self.lab, "Joana: Tão inteligente para umas coisas... Maria, é claro que o código é 2-2").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
