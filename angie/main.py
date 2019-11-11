@@ -45,7 +45,7 @@ class LembrarHerdeitariedade:
     def inicia(self):
         """O jogo inicia aqui. Olab será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz, "Temos que achar a formula. Vamos perguntar a alguém. Feche este texto e clique na bolota!").vai()
+        Texto(self.lab, "Temos que achar a formula. Vamos perguntar a alguém. Feche este texto e clique na bolota!").vai()
 
     
     
