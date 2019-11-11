@@ -38,16 +38,33 @@ class FioCruz:
 class Laboratorio:
 
     def __init__(self):
-        self.lab = Cena(FREDERICK)
-        self.dica_inicial = Elemento(FOCO, x=130, y=100, cena=self.lab, 
-            style={"opacity": 0.1}, vai=self.ajuda_personagem)
-
-    def ajuda_personagem(self, _=0):
     
-        """O personagem dará uma dica de como encontrar a fórmula."""
-        Texto(self.lab, "Eu acredito que o cientista falou que começa" +
-            "com 4-4, mas me dê um tmepo para lembrar do resto...").vai()
+        self.lab = Cena(FREDERICK)
         
+        self.dica_persnagem_1 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
+            style={"opacity": 0.1}, vai=self.ajuda_4_4)
+            
+        self.dica_persnagem_2 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
+            style={"opacity": 0.1}, vai=self.ajuda_5_1)
+            
+        self.dica_persnagem_3 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
+            style={"opacity": 0.1})
+
+    def ajuda_4_4(self, _=0):
+        """O personagem dará uma dica de como encontrar a fórmula."""
+        Texto(self.lab, "Eu acredito que o cientista falou que começa " +
+            "com 4-4, mas me dê um tmepo para lembrar do resto...").vai()
+        self.dica_persnagem_1 = self.dica_personagem_2
+        
+    def ajuda_5_1(self, _=0):
+        """O personagem dará uma dica de como encontrar a fórmula."""
+        Texto(self.lab, "Ah, lembrei, depois vem a 5_1. " +
+            "Acho que a Karina sabe da próxima!").vai()
+
+    def ajuda_3_2(self, _=0):
+        """O personagem dará uma dica de como encontrar a fórmula."""
+        Texto(self.lab, "Ah, lembrei, depois vem a 5_1. " +
+            "Acho que a Karina sabe da próxima!").vai()
 
     def inicia(self):
         """Esse é o lab do cientista."""
