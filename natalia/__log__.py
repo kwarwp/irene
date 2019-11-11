@@ -75,3 +75,10 @@ TypeError: 'Elemento' object is not callable
                                                                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 11:58:03.75 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 49
+  style={"opacity": 1},vai)     
+                          ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
