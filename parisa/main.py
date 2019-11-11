@@ -18,7 +18,8 @@ class FioCruz:
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
-        self.fiocruz = None
+        self.fiocruz.vai()
+        Texto(self.fiocruz, "Temos que achar o laboratório")
 
 
 if __name__ == "__main__":
