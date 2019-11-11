@@ -1,7 +1,7 @@
 # irene.kristen.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "Samuel Novaes Sena"
+__author__ = "<Cristiane Jorge cristiane.bonfim@ifb.edu.br>"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
@@ -12,15 +12,17 @@ class FioCruz:
 	""" Cenário da FioCruz. """
 	def __init__(self):
 		self.fiocruz = Cena(FIOCRUZ)
-		self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, vai=self.mostrarAjuda, style={"opacity": 0})
+		self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity":0},vai=self._ajuda)
 
-	def inicia(self):
+	def _ajuda(self, _=0):
+		"""O personagem dá uma explicação  de como encontrar o lab"""
+		Texto(self.fiocruz, "O laboratóiro? Siga pela esquerda").vai()
+
+    def inicia(self):
 		"""O jogo inicia aqui. O cenário principal será apresentado """
 		self.fiocruz.vai()
-		Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
-        
-	def mostrarAjuda(self, evento):
-		Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+		Texto(self.fiocruz, "Temos que achar o laboratorio. Vamos perguntas a alguém").vai()
+
 
 if __name__ == "__main__":
 	fc = FioCruz()
