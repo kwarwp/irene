@@ -60,3 +60,10 @@ AttributeError: 'FioCruz' object has no attribute 'fiocrus'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 11:06:07.319 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 37
+  def __init__(self):
+  ^
+IndentationError: unexpected indent
+'''},
