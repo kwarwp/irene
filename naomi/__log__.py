@@ -97,3 +97,10 @@ NameError: name 'TExto' is not defined
     TExto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
 NameError: name 'TExto' is not defined
 '''},
+{'date': 'Mon Nov 11 2019 10:53:33.577 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  style=({"capacity":0},vai=self._ajuda}
+                                  ^
+SyntaxError: invalid syntax
+'''},
