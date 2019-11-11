@@ -43,7 +43,7 @@ class LembrarHerdeitariedade:
              style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
              style={"opacity": 1})
-        self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
+        self.caneca = Elemento(CANECA, x=740, y=300, cena=self.lab,
              style={"opacity": 1})
 
     def _ajuda(self, _=0):
@@ -73,7 +73,7 @@ if __name__ == "__main__":
 class EntenderHerdeitariedade:
     """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
     estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
-    e pegue esse pen drive, mas lembre-se que tem pessoas interessadas em roubar a fórmula, por isso
+    e pegue esse pen drive, mas lembre-se de que tem pessoas interessadas em roubar a fórmula, por isso
     o pen drive possui uma senha que você terá que ser desvendada através da tabela que você usou
     para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
     
@@ -88,7 +88,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
