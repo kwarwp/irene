@@ -42,3 +42,10 @@ AttributeError: 'LembrarHerdeitariedade' object has no attribute 'fiocruz'
     self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity":0}, vai=self._ajuda)
 AttributeError: 'LembrarHerdeitariedade' object has no attribute 'fiocruz'
 '''},
+{'date': 'Mon Nov 11 2019 11:37:57.828 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  self.caneca = Elemento(CANECA, x=720, y=220, style={"width": 100px},cena = self.lab)
+                                                                   ^
+SyntaxError: invalid syntax
+'''},
