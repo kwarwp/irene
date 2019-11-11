@@ -49,6 +49,7 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
         self.denise = Elemento(FOCO, x=280, y=150, cena=self.lab, style={"opacity": 0})
         self.luisa = Elemento(FOCO, x=630, y=170, cena=self.lab, style={"opacity": 1})
+        self.teste = Elemento(FOCO, x=630, y=300, cena=self.lab, style={"opacity": 1})
         self.amanda = Elemento(FOCO, x=780, y=150, cena=self.lab, style={"opacity": 1})
 
     def _ajuda(self, _=0):
@@ -59,7 +60,7 @@ class LembrarHerdeitariedade:
     def _ajuda5_1(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
         self.denise.vai = self._ajuda3_2
-        self.luisa.vai = self._naoSouDenise
+        self.teste.vai = self._naoSouDenise
         self.amanda.vai = self._naoSouDenise
         Texto(self.lab, "Ah, lembrei! Tem 5-1? A Denise deve saber mais").vai()
     
@@ -70,10 +71,10 @@ class LembrarHerdeitariedade:
     def _ajuda3_2(self, _=0):
         """ A Denise dá uma explicação de como encontrar o lab. """
         self.amanda.vai = self._ajuda2_2
-        self.luisa.vai = self._luisa
+        self.teste.vai = self._teste
         Texto(self.lab, "O código que você precisa é o 3-2. Talvez a Amanda, que está do outro lado, saiba mais...").vai()
         
-    def _luisa(self, _=0):
+    def _teste(self, _=0):
         """ A Luisa diz que não é a Amanda. """
         Texto(self.lab, "Eu não sou a Amanda. É a moça do meu lado.").vai()
         
