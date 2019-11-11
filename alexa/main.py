@@ -73,7 +73,7 @@ class Laboratorio:
         """O personagem dará uma dica de como encontrar a fórmula."""
         self.dica_gaveta.vai = self.ajuda_2_2
         Texto(self.lab, "Você encontrou um papel com o código 5-1! " + 
-        "Além disso, tem uma informação apagada que só dar para ler a palavra 'gaveta'!").vai()]
+        "Além disso, tem uma informação apagada que só dar para ler a palavra 'gaveta'!").vai()
     
     def ajuda_2_2(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
