@@ -15,14 +15,14 @@ class FioCruz:
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz,
         style={"opacity":0},vai=self._ajuda)
 
-    def inicia(self):
-        """O personagem dá uma explicação  de como encontrar o lab """
-        Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+    def _ajuda(self, _=0):
+        """O personagem dá uma explicação  de como encontrar o lab"""
+        Texto(self.fiocruz, "O laboratóiro? Siga pela esquerda").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz, "Temos que achar o laboratório. Vamos perguntar a alguém?").vai()
+        Texto(self.fiocruz, "Temos que achar o laboratorio. Vamos perguntas a alguém").vai()
 
 
 if __name__ == "__main__":
