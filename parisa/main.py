@@ -51,11 +51,11 @@ class LembrarHerdeitariedade:
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
+        self.ajuda.vai = self._ajuda_5_1
         Texto(self.lab, "A fórmula? Tem a ver com 4-4? Daqui a pouco eu lembro mais.").vai()
         
-    def _ajuda3_1(self, _=0):
+    def _ajuda5_1(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        self.ajuda.vai = self.ajuda_3_1
         Texto(self.lab, "Ah, lembrei! Tem 5-1? A denise deve saber mais").vai()
         
     def _ajuda3_2(self, _=0):
