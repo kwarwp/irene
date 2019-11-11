@@ -15,7 +15,7 @@ class FioCruz:
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!".vai()
+        Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!").vai()
 
 if __name__ == "__main__":
     fc = FioCruz()
