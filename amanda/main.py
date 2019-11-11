@@ -43,7 +43,7 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 0})
         self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, vai=self._ajuda25_1)
-        self.maria = Elemento(FOCO, x=630, y=180, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
+        self.maria = Elemento(FOCO, x=630, y=170, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
         self.joana = Elemento(FOCO, x=770, y=150, cena=self.lab, style={"opacity": 0},vai=self._ajudajoana)
         
     def _ajuda(self, _=0):
