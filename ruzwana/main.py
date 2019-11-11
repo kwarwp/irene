@@ -43,7 +43,7 @@ class LembrarHereditariedade:
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
-        self.ajuda.vai=self.ajuda5_1()
+        self.ajuda.vai=self._ajuda5_1()
 #        Texto(self.lab,"A fórmula tem a ver com 4-4? Daqui a pouco lembro mais.").vai()
 
     def _ajuda5_1(self, _=0):
