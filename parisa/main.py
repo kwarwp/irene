@@ -21,7 +21,7 @@ class FioCruz:
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        self.fiocruz.irProlab.style["opacity"] = 0.3
+        # self.fiocruz.irProlab.style["opacity"] = 0.3
         self.fiocruz.irProLab = LembrarHerdeitariedade()
         Texto(self.fiocruz, "O laboratório está na direita.").vai()
         
