@@ -56,13 +56,12 @@ class Laboratorio:
     def ajuda_5_1(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
         self.dica_persnagem_2.vai = self.ajuda_3_2
-        Texto(self.lab, "Ah, lembrei, depois vem a 5_1. " +
+        Texto(self.lab, "Ah, lembrei, depois vem a 5-1. " +
             "Acho que a Karina sabe da próxima!").vai()
 
     def ajuda_3_2(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
-        Texto(self.lab, "Ah, lembrei, depois vem a 5_1. " +
-            "Acho que a Karina sabe da próxima!").vai()
+        Texto(self.lab, "Só sei que depois da 5-1, vem o 3-2!").vai()
 
     def inicia(self):
         """Esse é o lab do cientista."""
