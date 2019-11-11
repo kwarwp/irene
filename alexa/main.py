@@ -69,7 +69,8 @@ class Laboratorio:
         
     def ajuda_5_1_2(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
-        Texto(self.lab, "Você encontrou um papelzinho com o código 5-1!").vai()
+        Texto(self.lab, "Você encontrou um papel com o código 5-1! " + 
+        "Além disso, tem uma informação apagada que só dar para ler a palavra 'gaveta'!").vai()
 
     def inicia(self):
         """Esse é o lab do cientista."""
