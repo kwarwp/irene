@@ -9,6 +9,8 @@ FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
 CANECA ="https://i.imgur.com/El0wysJ.png"
+ESCRITORIO = "https://i.imgur.com/7zvQ6PZ.jpg"
+COFRE = "https://i.imgur.com/obMPIpB.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -19,7 +21,8 @@ class FioCruz:
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar o lab """
-        Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+        self.fiocruz.direita = LembrarHerdeitariedade()
+        Texto(self.fiocruz, "O laboratório? Siga pela direita").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -73,9 +76,52 @@ class LembrarHerdeitariedade:
         """O jogo inicia aqui. O laboratório será apresentado """
         self.lab.vai()
         Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+    def vai(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+        
+class Escritorio:
+    """ Escritório do Cientista"""
+    def __init__(self):
+        self.esc = Cena(ESCRITORIO)
+        self.cofre = Elemento(COFRE, x=740, y=260, w=40, h=40, cena=self.lab,
+             style={"opacity": 1})
+        self.quadro = Elemento(FOCO, x=720, y=110, cena=self.lab, style={"opacity": 0})
+
+    def _ajuda(self, _=0):
+        """O personagem dá uma explicação de como encrontrar fórmula """
+        self.ajuda.vai = self._ajuda5_1
+        Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
+
+    def _ajuda5_1(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.denise.vai = self._ajuda3_2
+        Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
+
+    def _ajuda3_2(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.caneca.vai = self._ajuda5_1_2
+        Texto(self.lab, "O professor me falou o código 3-2? Ele gostava de café").vai()
+        
+    def _ajuda5_1_2(self, _=0):
+        self.quadro.vai = self._ajuda2_2
+        Texto(self.lab, "Oi, sou uma caneca falante! E a outra parte do códico é 5-1. Meu amigo quadro branco deve saber mais.").vai()
+
+    def _ajuda2_2(self, _=0):
+        Texto(self.lab, "Também sou um objeto inanimado falante e eu sei que a última parte do código é 2-2.").vai()
+    
+    def inicia(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+    def vai(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
 
 if __name__ == "__main__":
-    fc = LembrarHerdeitariedade() #FioCruz()
+    fc = FioCruz() #FioCruz()
     fc.inicia()
 #####################################################################################################
 
