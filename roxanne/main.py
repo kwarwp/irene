@@ -16,8 +16,8 @@ class FioCruz:
         style={"opacity":0},vai=self._ajuda)
 
 def inicia(self):
-"""O personagem dá uma explicação  de como encontrar o lab """
- Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+        """O personagem dá uma explicação  de como encontrar o lab """
+        Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
