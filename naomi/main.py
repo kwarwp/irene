@@ -47,8 +47,8 @@ class LembrarHerdeitariedade:
              style={"opacity": 1})
 
         if __name__ == "__main__":
-    fc = FioCruz()
-    fc.inicia()
+        fc = FioCruz()
+        fc.inicia()
 
 
 
