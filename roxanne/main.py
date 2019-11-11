@@ -1,12 +1,14 @@
 # irene.roxanne.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "<O seu nome aqui>"
+__author__ = "<escreva seu nome>"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
-FOCO = "https://i.imgur.com/6e096VA.png"
+FOCO = "https://i.imgur.com/6e096Va.png"
+TABELA = "https://imgur.com/sotDlmO.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
+BIBLIOTECA = "https://i.imgur.com/e6Oc9xU.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
