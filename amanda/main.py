@@ -38,11 +38,11 @@ class LembrarHerdeitariedade:
 
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.ajuda = Elemento(FOCO, x=100, y=120, cena=self.lab, style={"opacity": 1},vai=self._ajuda)
+        self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 1},vai=self._ajuda)
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrarlaboratório """
-        Texto(self.lab, "O laboratório ? Siga pela esquerda.").vai()
+        Texto(self.lab, "A fórmula ? Tem a ver com 4-4. Daqui a pouco lembro mais.").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O laborório será apresentado """
