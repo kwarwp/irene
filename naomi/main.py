@@ -42,7 +42,7 @@ class LembrarHerdeitariedade:
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab,
              style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab,
-             style={"opacity": 1})
+             style={"opacity": 0})
         self.caneca = Elemento(CANECA, x=740, y=200, cena=self.lab,
              style={"opacity": 1})
 
