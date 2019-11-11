@@ -22,7 +22,7 @@ class FioCruz:
         Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
     def inicia(self):
-    """O jogo inicia aqui. O cenário principal será apresentado"""
+        """O jogo inicia aqui. O cenário principal será apresentado"""
         self.fiocruz.vai()
         Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
         
