@@ -64,7 +64,7 @@ class LembrarHerdeitariedade:
         
     def _ajuda5_1_2(self, _=0):
         self.quadro.vai = self._ajuda2_2
-        Texto(self.lab, "Oi, sou uma caneca falante! O códico é 5-1, meu amigo quadro branco deve saber mais.").vai()
+        Texto(self.lab, "Oi, sou uma caneca falante! E a outra parte do códico é 5-1. Meu amigo quadro branco deve saber mais.").vai()
 
     def _ajuda2_2(self, _=0):
         Texto(self.lab, "Também sou um objeto inanimado falante e eu sei que a última parte do código é 2-2.").vai()
