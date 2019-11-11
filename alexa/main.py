@@ -39,12 +39,12 @@ class Laboratorio:
 
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.dica_inicial = Elemento(FOCO, x=0, y=350, cena=self.lab, 
+        self.dica_inicial = Elemento(FOCO, x=130, y=100, cena=self.lab, 
             style={"opacity": 0.1}, vai=self.ajuda_personagem)
 
     def ajuda_personagem(self, _=0):
-        """O personagem dará uma dica de como encontrar o lab."""
-        Texto(self.lab, "Para encontrar o lab, você precisa seguir para esquerda...").vai()
+        """O personagem dará uma dica de como encontrar a fórmula."""
+        Texto(self.lab, "É a 4-4? Não estou lembrando...").vai()
         
 
     def inicia(self):
