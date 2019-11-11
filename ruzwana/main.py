@@ -54,7 +54,13 @@ class LembrarHereditariedade:
 
     def _ajuda3_2(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
+        self.caneca.vai = self.caneca_dica
         Texto(self.lab,"O professor me falou o código 3-2? Ele gostava de café").vai()
+
+    def caneca_dica(self, _=0):
+        """O personagem dá uma explicação de como encontrar o laboratório """
+        Texto(self.lab,"Achou!").vai()
+
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
