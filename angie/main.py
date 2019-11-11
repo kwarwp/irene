@@ -47,7 +47,7 @@ class LembrarHerdeitariedade:
         self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
              style={"opacity": 1})
              
-        self.caneca = Elemento(CAIXAMETAL, x=300, y=280, cena=self.lab,
+        self.caixametal = Elemento(CAIXAMETAL, x=300, y=280, cena=self.lab,
              style={"opacity": 1})             
              
 
