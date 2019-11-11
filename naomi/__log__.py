@@ -304,3 +304,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Nov 11 2019 12:57:28.955 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  """ O personagem dá uma explicação de como encontrar o la"""
+  ^
+IndentationError: expected an indented block
+'''},
