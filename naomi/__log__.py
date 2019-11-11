@@ -311,3 +311,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Nov 11 2019 12:58:18.963 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  def inicia(self):
+  ^
+IndentationError: unexpected indent
+'''},
