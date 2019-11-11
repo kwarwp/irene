@@ -60,12 +60,19 @@ class LembrarHerdeitariedade:
         """O personagem dá uma nova explicação de como encrontrar o lab """
         Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
 
-    def inicia(self):
-        """O jogo inicia aqui. O laboratório será apresentado """
-        self.lab.vai()
-        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
 
 if __name__ == "__main__":
     fc = LembrarHerdeitariedade() #FioCruz()
     fc.inicia()
+    
+#####################################################################################################
+class EntenderHerdeitariedade:
+    """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
+    estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
+    e pegue esse pen drive, mas lembre-se de que tem pessoas interessadas em roubar a fórmula, por isso
+    o pen drive possui uma senha que você terá que ser desvendada através da tabela que você usou
+    para descobrir a senha do cofre. A senha tem os seguintes números: 4-4, 5-5, 3-3, 5-1, 2-1, 5-5, 2-2
+    
+    Imagens: cena lab, cofre, pendrive, tabela
+    """    
 
