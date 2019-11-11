@@ -45,7 +45,7 @@ class LembrarHerdeitariedade:
     def _ajuda(self, _=0):
         """O personagem dá uma explicação  de como encontrar a fórmula"""
         self.ajuda.vai = self.ajuda5_1
-        Texto(self.lab, "Lembrei tem 5-17 A Denise deve saber mais").vai()
+        Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
     
     def _ajuda5_1(self, _=0):
         """O personagem dá uma explicação  de como encontrar o lab"""
@@ -53,7 +53,7 @@ class LembrarHerdeitariedade:
                
     def _ajuda3_2(self, _=0):
         """O personagem dá uma nova explicação de como encontrar o lab"""
-        Texto(self.lab, "O laboratório? Siga pela esquerda").vai()
+        Texto(self.lab, "Lembrei tem 5-17 A Denise deve saber mais").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O laboratório será apresentado """
