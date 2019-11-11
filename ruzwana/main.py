@@ -60,7 +60,7 @@ class LembrarHereditariedade:
         Texto(self.lab,"Temos que achar a fórmula. vamos perguntar a alguém").vai()
 
 if __name__ == "__main__":
-    fc = FioCruz()
+    fc = LembrarHereditariedade #FioCruz()
     fc.inicia()
     fc.ajuda()
 #    fc = LembrarHereditariedade
