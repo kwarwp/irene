@@ -53,3 +53,10 @@ AttributeError: 'FioCruz' object has no attribute 'fiocrus'
     Texto(self.fiocrus,"temos tempo ao tempo").vai()
 AttributeError: 'FioCruz' object has no attribute 'fiocrus'
 '''},
+{'date': 'Mon Nov 11 2019 11:04:11.533 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 37
+  def __init__(self):
+  ^
+IndentationError: unexpected indent
+'''},
