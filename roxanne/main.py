@@ -15,7 +15,7 @@ class FioCruz:
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=0, y=350, cena=self.fiocruz,
-             style={"opacity": 0},vai=self._ajuda)
+             style={"opacity": 1},vai=self._ajuda)
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar o lab """
@@ -95,7 +95,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
