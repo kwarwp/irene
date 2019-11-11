@@ -56,6 +56,6 @@ class LembrarHereditariedade:
         Texto(self.fiocruz, "Procure setor de informações, precisamos encontrar o laboratório!").vai()
         
 if __name__ == "__main__":
-    fc = FioCruz()
+    fc = LembrarHereditariedade()
     fc.inicia()
     
