@@ -45,6 +45,10 @@ class LembrarHerdeitariedade:
              style={"opacity": 1})
         self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
              style={"opacity": 1})
+        self.caixametal = Elemento(CAIXAMETAL, x=300, y=280, cena=self.lab,
+             style={"opacity": 1})
+             
+             
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar fórmula """
