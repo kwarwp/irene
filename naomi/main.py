@@ -22,11 +22,11 @@ class FioCruz:
         Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
     def inicia(self):
-        """O jogo inicia aqui. O cenário principal será apresentado"""
+        """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
         Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
-        
-        
+
+
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
     seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
@@ -46,9 +46,26 @@ class LembrarHerdeitariedade:
         self.caneca = Elemento(CANECA, x=740, y=300, cena=self.lab,
              style={"opacity": 1})
 
-        if __name__ == "__main__":
-            fc = FioCruz()
-        fc.inicia()
+    def _ajuda(self, _=0):
+        """O personagem dá uma explicação de como encrontrar fórmula """
+        self.ajuda.vai = self._ajuda5_1
+        Texto(self.lab, "A fórmula, tem a ver com 4-4? daqui a pouco lembro mais").vai()
 
+    def _ajuda5_1(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        self.denise.vai = self._ajuda3_2
+        Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
 
+    def _ajuda3_2(self, _=0):
+        """O personagem dá uma nova explicação de como encrontrar o lab """
+        Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
+
+    def inicia(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+
+if __name__ == "__main__":
+    fc = LembrarHerdeitariedade() #FioCruz()
+    fc.inicia()
 
