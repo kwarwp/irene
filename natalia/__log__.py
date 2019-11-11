@@ -166,3 +166,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 12:21:12.993 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 51
+  def _ajuda3_4(self, _=0):
+  ^
+IndentationError: unexpected indent
+'''},
