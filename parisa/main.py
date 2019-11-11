@@ -62,6 +62,10 @@ class LembrarHerdeitariedade:
         self.luisa.vai = self._naoSouDenise
         self.amanda.vai = self._naoSouDenise
         Texto(self.lab, "Ah, lembrei! Tem 5-1? A Denise deve saber mais").vai()
+    
+    def _naoSouDenise(self, _=0):
+        """ Ela diz que não é a denise """
+        Texto(self.lab, "A Denise está do outro lado.").vai()
         
     def _ajuda3_2(self, _=0):
         """ A Denise dá uma explicação de como encontrar o lab. """
@@ -71,16 +75,11 @@ class LembrarHerdeitariedade:
         
     def _luisa(self, _=0):
         """ A Luisa diz que não é a Amanda. """
-        self.luisa.vai = None
         Texto(self.lab, "Eu não sou a Amanda. É a moça do meu lado.").vai()
         
     def _ajuda2_2(self, _=0):
         """ A Amanda diz a última pista """
         Texto(self.lab, "O último código para você decifrar a palavra-chave é 2-2.").vai()
-    
-    def _naoSouDenise(self, _=0):
-        """ Ela diz que não é a denise """
-        Texto(self.lab, "A Denise está do outro lado.").vai()
     
     def inicia(self, _=0):
         """ Muada para o laboratório """
