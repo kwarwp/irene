@@ -10,7 +10,7 @@ FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
-    def __init__(self):
+def __init__(self):
 	self.fiocruz = Cena(FIOCRUZ)
 	self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.lab, style={"opacity":0},vai=self._ajuda)
         
