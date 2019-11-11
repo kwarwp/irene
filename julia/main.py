@@ -27,7 +27,6 @@ class FioCruz:
         self.fiocruz.vai()
         Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
 
-
 class LembrarHerdeitariedade:
     """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
     seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
@@ -46,7 +45,7 @@ class LembrarHerdeitariedade:
              style={"opacity": 0})
         self.caneca = Elemento(CANECA, x=740, y=490, cena=self.lab,
              style={"opacity": 1})
-        self.microscopio = Elemento(microscopio, x=190, y=470, cena=self.lab,
+        self.microscopio = Elemento(microscopio, x=210, y=430, cena=self.lab,
              style={"opacity": 1})
 
     def _ajuda(self, _=0):
@@ -65,8 +64,13 @@ class LembrarHerdeitariedade:
         Texto(self.lab, "O professor me falou o código 3-2? Ele gostava de tomar café").vai()
     
     def _ajuda4_2(self, _=0):
-        """O personagem dá uma nova explicação de como encontrar o lab """
+        self.microscopio.vai = self._ajuda4_3
+        """Código encontra """
         Texto(self.lab, "Procure o código 4-2?. Procure o código que torna tudo muito maior ").vai()
+    
+    def _ajuda4_3(self, _=0):
+        """Código encontra """
+        Texto(self.lab, "A fórmula é 82#0450").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O laboratório será apresentado """
