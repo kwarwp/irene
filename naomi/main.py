@@ -72,6 +72,11 @@ if __name__ == "__main__":
     
 #####################################################################################################
 
+   def inicia(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+        
 class EntenderHerdeitariedade:
     """Meu caro e querido aprendiz Damon, as informações que você precisa sobre HEREDITARIEDADE
     estão em um pen drive que deixei na gaveta da minha mesa que tem o fundo falso, abra essa geveta
