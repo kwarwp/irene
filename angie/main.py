@@ -3,7 +3,6 @@
 """
 __author__ = "<César Bastos (RJ)>"
 __version__ = "19.11.11"
-# irene.roxanne.main.py
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
 FOCO = "https://i.imgur.com/6e096Va.png"
@@ -46,10 +45,6 @@ class LembrarHerdeitariedade:
              style={"opacity": 1})
         self.caneca = Elemento(CANECA, x=740, y=480, cena=self.lab,
              style={"opacity": 1})
-             
-        self.caixametal = Elemento(CAIXAMETAL, x=300, y=280, cena=self.lab,
-             style={"opacity": 1})             
-             
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar fórmula """
