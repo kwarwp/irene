@@ -30,21 +30,14 @@ class FioCruz:
 
 
 if __name__ == "__main__":
-    fc = FioCruz()
+    "fc = FioCruz()"
+    fc = Laboratorio()
     fc.inicia()
     
 #####################################################################################################
 
-class LembrarHerdeitariedade:
-    """Após a morte do cientista Frederick, planejavam roubar sua fórmula em seu laboratório,
-    seu fiel amigo e aprendiz Damon, precisa procurar a fórmula para protegê-la que está no laboratório,
-    porém seu amigo antes de morrer disse-lhe "botei a fórmula dentro deste cofre, cujo a senha é formada
-    por letras, que estão espalhadas em meu laboratório.". Existe uma tabela deixada pelo cientitsa para
-    decifrar quais letras formam a palavra-chave (4-4, 5-1, 3-2, 5-1, 2-2= GENES). 
-    
-    Imagens: cena lab, caneca, tubo de ensaio, relógio, quadro, microscópio
-    Na verdade, adaptei para perguntar a pessoas que já estavam na cena
-    """
+class Laboratorio:
+
     def __init__(self):
         self.lab = Cena(FREDERICK)
         self.dica_inicial = Elemento(FOCO, x=50, y=380, cena=self.lab, 
@@ -56,6 +49,6 @@ class LembrarHerdeitariedade:
         
 
     def inicia(self):
-        """O jogo inicia aqui. O cenário principal será apresentado """
+        """Esse é o lab do cientista."""
         self.lab.vai()
-        Texto(self.lab, "Precisamos encontrar o lab. Quem tem boca vai a Roma!").vai()
+        Texto(self.lab, "Já que estamos no lab, agora precisamos encontrar a fórmula!").vai()
