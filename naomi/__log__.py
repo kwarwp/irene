@@ -15,3 +15,10 @@
     ft = FiioCruz()
 NameError: name 'FiioCruz' is not defined
 '''},
+{'date': 'Mon Nov 11 2019 10:31:36.733 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  if __name__ = "__main__":
+               ^
+SyntaxError: invalid syntax
+'''},
