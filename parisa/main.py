@@ -19,12 +19,12 @@ class FioCruz:
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        Texto(self.fiocruz, "O laboratório está no segundo andar da fio cruz.").vai()
+        Texto(self.fiocruz, "O laboratório está na direita.").vai()
     
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz, "Temos que achar o laboratório. Talvez alguem aqui saiba onde é.").vai()
+        # Texto(self.fiocruz, "Temos que achar o laboratório. Talvez alguem aqui saiba onde é.").vai()
 
 
 if __name__ == "__main__":
