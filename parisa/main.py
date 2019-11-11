@@ -16,13 +16,18 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
-        self.ajuda = Elemento(FOCO, x=30, y=350, width=50, height=50, cena=self.fiocruz, style={"opacity": 0.5}, vai=self._ajuda)
-        self.irParaLab = Elemento(FOCO, x=800, y=600, width=50, height=50, cena=self.fiocruz, style={"opacity": 0}, vai=self._ajuda)
+        self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity": 0.5}, vai=self._ajuda)
+        self.irProLab = Elemento(FOCO, x=800, y=600, cena=self.fiocruz, style={"opacity": 0}, vai=self._irProLab)
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
         Texto(self.fiocruz, "O laboratório está na direita.").vai()
     
+    def _irProLab(self, _=0):
+        """ Muda para o cenário do laboratório """
+        lab = LembrarHerdeitariedade()
+        lab.inicia()
+        
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
@@ -42,10 +47,20 @@ class LembrarHerdeitariedade:
     def __init__(self):
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=120, y=80, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
+        self.denise = Elemento(FOCO, x=230, y=80, cena=self.lab, style={"opacity": 1})
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
-        Texto(self.lab, "A fórmula? Tem a ver com 4-4? Daqui a pouco mais.").vai()
+        Texto(self.lab, "A fórmula? Tem a ver com 4-4? Daqui a pouco eu lembro mais.").vai()
+        
+    def _ajuda3_1(self, _=0):
+        """ O personagem dá uma explicação de como encontrar o lab. """
+        self.ajuda.vai = self.ajuda_3_1
+        Texto(self.lab, "Ah, lembrei! Tem 5-1? A denise deve saber mais").vai()
+        
+    def _ajuda3_2(self, _=0):
+        """ A Denise dá uma explicação de como encontrar o lab. """
+        Texto(self.lab, "O código que você precisa é o 3-2.").vai()
     
     def inicia(self):
         """ Muada para o laboratório """
