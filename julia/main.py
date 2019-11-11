@@ -19,9 +19,10 @@ class FioCruz:
              style={"opacity": 0},vai=self._ajuda)
 
     def _ajuda(self, _=0):
-        self.fiocruz.direita = LembrarHerdeitariedade()
         """O personagem dá uma explicação de como encrontrar o lab """
+        self.fiocruz.direita = LembrarHerdeitariedade()
         Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
+        
         
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -102,7 +103,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
