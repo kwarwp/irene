@@ -19,7 +19,7 @@ class FioCruz:
         
         
 if__author__ = "Ivete"
-ft = FiioCruz()
+ft = FioCruz()
 ft.inicia
 
 
