@@ -17,16 +17,12 @@ class FioCruz:
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity": 0.5}, vai=self._ajuda)
-        self.irProLab = Elemento(FOCO, x=800, y=600, cena=self.fiocruz, style={"opacity": 0}, vai=self._irProLab)
+        self.irProLab = Elemento(FOCO, x=800, y=600, cena=self.fiocruz, style={"opacity": 1}, vai=self._irProLab)
 	
     def _ajuda(self, _=0):
         """ O personagem dá uma explicação de como encontrar o lab. """
+        self.fiocruz.irProLab = LembrarHerdeitariedade()
         Texto(self.fiocruz, "O laboratório está na direita.").vai()
-    
-    def _irProLab(self, _=0):
-        """ Muda para o cenário do laboratório """
-        lab = LembrarHerdeitariedade()
-        lab.inicia()
         
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -87,6 +83,6 @@ class LembrarHerdeitariedade:
         Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar à alguem").vai()
         
 if __name__ == "__main__":
-    fc = LembrarHerdeitariedade()
+    fc = FioCruz()
     fc.inicia()
 #####################################################################################################
