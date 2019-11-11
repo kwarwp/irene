@@ -12,12 +12,19 @@ FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 
 class FioCruz:
     """ Cenário da FioCruz. """
-    def __init__(self):
+	def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
+        self.dica_inicial = Elemento(FOCO, x=30, y=360, cena=self.fiocruz)
 
-    def inicia(self):
+	def ajuda_personagem(self):
+    	"""O personagem dará umadica de como encontrar o lab."""
+        Texto(self.fiocruz, "Pra encontrar o lab, você precisa seguir para esquerda...").vai()
+        
+
+	def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
+        Texto(self.fiocruz, "Precisamos encontrar o lab. Quem tem boca vai a Roma!").vai()
 
 
 if __name__ == "__main__":
