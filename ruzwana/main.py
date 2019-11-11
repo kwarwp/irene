@@ -41,8 +41,7 @@ class LembrarHereditariedade:
     """
     def __init__(self):
         self.lab = Cena(FREDERICK)
-#        self.ajuda = Elemento(FOCO,x=30,y=350, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
-        self.ajuda = Elemento(FOCO,x=30,y=350, cena=self.lab, vai=self._ajuda)
+        self.ajuda = Elemento(FOCO,x=150,y=80, cena=self.lab, style={"opacity": 1}, vai=self._ajuda)
 
 
     def _ajuda(self, _=0):
