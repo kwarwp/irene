@@ -38,12 +38,12 @@ class LembrarHereditariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO,x=130,y=100, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
         self.denise = Cena(FREDERICK)
-        self.ajuda = Elemento(FOCO,x=230,y=100, cena=self.denise, style={"opacity": 1})
+        self._ajuda3_2 = Elemento(FOCO,x=230,y=100, cena=self.denise, style={"opacity": 1})
 
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
-        self.ajuda.vai=self._ajuda5_1()
+        self._ajuda.vai=self._ajuda5_1()
 #        Texto(self.lab,"A fórmula tem a ver com 4-4? Daqui a pouco lembro mais.").vai()
 
     def _ajuda5_1(self, _=0):
