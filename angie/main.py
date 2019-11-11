@@ -14,6 +14,7 @@ class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
         self.fiocruz = Cena(FIOCRUZ)
+        self.ajuda = Elemento(FOCO, cena=self.fiocruz)
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
