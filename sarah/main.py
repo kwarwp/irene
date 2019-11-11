@@ -12,7 +12,7 @@ FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 class FioCruz:
     """ Cenário da FioCruz. """
     def __init__(self):
-        self.fiocruz = None
+        self.fiocruz = Cena
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
