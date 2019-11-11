@@ -18,7 +18,8 @@ class FioCruz:
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
-        Texto(self.fiocruz,"O laboratório? Siga pela esquerda").vai()
+        self.fiocruz.direita = LembrarHerdeitariedade()
+        Texto(self.fiocruz, "O laboratório? Siga pela direita").vai()
         
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -61,6 +62,10 @@ class LembrarHereditariedade:
         """O personagem dá uma explicação de como encontrar o laboratório """
         Texto(self.lab,"Achou!").vai()
 
+    def vai(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
@@ -68,7 +73,7 @@ class LembrarHereditariedade:
         Texto(self.lab,"Temos que achar a fórmula. vamos perguntar a alguém").vai()
 
 if __name__ == "__main__":
-    fc = LembrarHereditariedade() #FioCruz()
+    fc = FioCruz()
     fc.inicia()
 #    fc.ajuda()
 #    fc = LembrarHereditariedade
