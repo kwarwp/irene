@@ -20,3 +20,10 @@ IndentationError: unexpected indent
                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 10:51:54.997 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  self.dica_inicial = Elemento(FOCO, x=30, y=360, cena=self.fiocruz, 
+                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
