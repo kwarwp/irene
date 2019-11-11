@@ -44,7 +44,7 @@ class Laboratorio:
         self.dica_persnagem_1 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
             style={"opacity": 0.1}, vai=self.ajuda_4_4)
             
-        self.dica_persnagem_2 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
+        self.dica_persnagem_2 = Elemento(FOCO, x=260, y=140, cena=self.lab, 
             style={"opacity": 0.1})
 
     def ajuda_4_4(self, _=0):
