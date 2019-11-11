@@ -213,3 +213,10 @@ IndentationError: unexpected indent
     	fc.inicia()
 AttributeError: 'FioCruz' object has no attribute 'inicia'
 '''},
+{'date': 'Mon Nov 11 2019 11:00:00.434 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  def __init__(self):
+  ^
+IndentationError: unexpected indent
+'''},
