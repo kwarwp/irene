@@ -40,6 +40,8 @@ class LembrarHerdeitariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab,
              style={"opacity": 1},vai=self._ajuda)
+             self.denise = Elemto(FICI, x=230, y=100, cena=self.lab,
+             style={"opacity": 1},vai=self._ajuda)
 
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar o lab """
