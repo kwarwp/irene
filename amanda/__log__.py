@@ -89,3 +89,10 @@ NameError: name 'cena' is not defined
     self.fiocruz = cena(fiocruz)
 NameError: name 'cena' is not defined
 '''},
+{'date': 'Mon Nov 11 2019 11:36:52.545 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  """O personagem dá uma explicação de como encontrarlaboratório """ self.denise.vai = self._ajuda3_2
+                                                                      ^
+SyntaxError: invalid syntax
+'''},
