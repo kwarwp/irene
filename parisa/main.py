@@ -18,8 +18,8 @@ class FioCruz:
         self.ajuda = Elemento(FOCO, x=30, y=350, opacity=0.5, cena = self.fiocruz)
 	
     def inicia(self):
-    """ O personagem dá uma explicação de como encontrar o lab. """
-    Text(self.fiocruz, "O laboratório está no segundo andar da fio cruz. Sala 2005.")
+        """ O personagem dá uma explicação de como encontrar o lab. """
+        Text(self.fiocruz, "O laboratório está no segundo andar da fio cruz. Sala 2005.")
     
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
