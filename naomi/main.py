@@ -55,10 +55,6 @@ class LembrarHerdeitariedade:
         """O personagem dá uma nova explicação de como encrontrar o lab """
         self.denise.vai = self._ajuda3_2
         Texto(self.lab, "Lembrei! tem 5-1? A denise deve saber mais").vai()
-
-    def _ajuda3_2(self, _=0):
-        """O personagem dá uma nova explicação de como encrontrar o lab """
-        Texto(self.lab, "O professor me falou o código 3-2? Ele gostava d....").vai()
     
     def _ajuda3_2(self, _=0):
         """O personagem dá uma nova explicação de como encrontrar o lab """
