@@ -79,6 +79,6 @@ class LembrarHerdeitariedade:
 
 
 if __name__ == "__main__":
-    fc = LembrarHerdeitariedade() #FioCruz()
-    #fc = FioCruz()
+    #fc = LembrarHerdeitariedade() #FioCruz()
+    fc = FioCruz()
     fc.inicia()
