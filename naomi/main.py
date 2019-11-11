@@ -1,7 +1,7 @@
 # irene.naomi.main.py
 """Planejamento do jogo da Genética JAIE19
 """
-__author__ = "<O seu nome aqui>"
+__author__ = "Ivete"
 __version__ = "19.11.11"
 from _spy.vitollino.main import STYLE, Cena, Elemento, Texto
 STYLE.update(width=850, height="650px") # Atualiza o tamanho da tela
@@ -17,8 +17,7 @@ class FioCruz:
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
         
-        
-if__author__ = "Ivete"
+if __name__ = "__main__":
 ft = FioCruz()
 ft.inicia
 
