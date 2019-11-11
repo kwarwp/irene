@@ -283,3 +283,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Nov 11 2019 12:53:29.934 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  self.fiocruz = Cena(FIOCRUZ)
+  ^
+IndentationError: expected an indented block
+'''},
