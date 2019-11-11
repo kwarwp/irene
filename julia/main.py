@@ -77,6 +77,11 @@ class LembrarHerdeitariedade:
         """O jogo inicia aqui. O laboratório será apresentado """
         self.lab.vai()
         Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+    def vai(self):
+        """O jogo inicia aqui. O laboratório será apresentado """
+        self.lab.vai()
+        Texto(self.lab, "Temos que achar a fórmula. Vamos perguntar a alguém").vai()
+
 
 if __name__ == "__main__":
     #fc = LembrarHerdeitariedade() #FioCruz()
