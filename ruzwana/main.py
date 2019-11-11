@@ -36,9 +36,8 @@ class LembrarHereditariedade:
     """
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.ajuda = Elemento(FOCO,x=130,y=100, cena=self.lab, style={"opacity": 0}, vai=self._ajuda)
-        self.denise = Cena(FREDERICK)
-        self._ajuda3_2 = Elemento(FOCO,x=230,y=100, cena=self.denise, style={"opacity": 1})
+        self.ajuda = Elemento(FOCO,x=130,y=100, cena=self.lab, style={"opacity": 1}, vai=self._ajuda)
+        self.denise = Elemento(FOCO,x=260,y=140, cena=self.lab, style={"opacity": 1})
 
 
     def _ajuda(self, _=0):
@@ -48,11 +47,12 @@ class LembrarHereditariedade:
 
     def _ajuda5_1(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
+        self.denise.vai = self._ajuda_3_2
         Texto(self.lab,"Lembrei! Tem 5-1? A Denise deve saber mais").vai()
 
     def _ajuda3_2(self, _=0):
         """O personagem dá uma explicação de como encontrar o laboratório """
-        Texto(self.lab,"Lembrei! Tem 5-1? A Denise deve saber mais").vai()
+        Texto(self.lab,"O professor me falou o código 3-2? Ele gostava de café").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
