@@ -20,3 +20,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 09:43:26.743 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  Texto(self.fiocruz, "O laboratório? Siga pela esquerda"),vai()
+  ^
+IndentationError: unexpected indent
+'''},
