@@ -220,3 +220,10 @@ AttributeError: 'FioCruz' object has no attribute 'inicia'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 11:01:36.146 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  class FioCruz:
+  ^
+IndentationError: unexpected indent
+'''},
