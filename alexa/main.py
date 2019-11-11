@@ -45,16 +45,13 @@ class Laboratorio:
             style={"opacity": 0.1}, vai=self.ajuda_4_4)
             
         self.dica_persnagem_2 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
-            style={"opacity": 0.1}, vai=self.ajuda_5_1)
-            
-        self.dica_persnagem_3 = Elemento(FOCO, x=130, y=100, cena=self.lab, 
             style={"opacity": 0.1})
 
     def ajuda_4_4(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
         Texto(self.lab, "Eu acredito que o cientista falou que começa " +
             "com 4-4, mas me dê um tmepo para lembrar do resto...").vai()
-        self.dica_persnagem_1 = self.dica_personagem_2
+        self.dica_persnagem_1 = self.ajuda_5_1
         
     def ajuda_5_1(self, _=0):
         """O personagem dará uma dica de como encontrar a fórmula."""
