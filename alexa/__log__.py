@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Nov 11 2019 10:48:35.575 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  def ajuda_personagem(self, _=0)
+                                  ^
+SyntaxError: invalid syntax
+'''},
