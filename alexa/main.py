@@ -39,7 +39,7 @@ class Laboratorio:
 
     def __init__(self):
         self.lab = Cena(FREDERICK)
-        self.dica_inicial = Elemento(FOCO, x=50, y=380, cena=self.lab, 
+        self.dica_inicial = Elemento(FOCO, x=0, y=350, cena=self.lab, 
             style={"opacity": 0.1}, vai=self.ajuda_personagem)
 
     def ajuda_personagem(self, _=0):
