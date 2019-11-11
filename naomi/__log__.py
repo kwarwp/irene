@@ -22,3 +22,10 @@ NameError: name 'FiioCruz' is not defined
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 11 2019 10:31:56.323 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  ft = FioCruz()
+  ^
+IndentationError: expected an indented block
+'''},
