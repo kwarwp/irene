@@ -190,3 +190,10 @@ AttributeError: 'FioCruz' object has no attribute '_ajuda'
     	self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.lab, style={"opacity":0},vai=self._ajuda)
 AttributeError: 'FioCruz' object has no attribute 'lab'
 '''},
+{'date': 'Mon Nov 11 2019 10:59:05.45 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  def ajuda(self, _=0):
+  ^
+IndentationError: unexpected indent
+'''},
