@@ -332,3 +332,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Nov 11 2019 13:00:09.260 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  """O jogo inicia aqui. O cenário principal será apresentado"""
+  ^
+IndentationError: expected an indented block
+'''},
