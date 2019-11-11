@@ -18,7 +18,7 @@ class FioCruz:
 		"""O personagem dá uma explicação  de como encontrar o lab"""
 		Texto(self.fiocruz, "O laboratóiro? Siga pela esquerda").vai()
 
-    def inicia(self):
+	def inicia(self):
 		"""O jogo inicia aqui. O cenário principal será apresentado """
 		self.fiocruz.vai()
 		Texto(self.fiocruz, "Temos que achar o laboratorio. Vamos perguntas a alguém").vai()
