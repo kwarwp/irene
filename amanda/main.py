@@ -16,14 +16,15 @@ class FioCruz:
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity": 0},vai=self._ajuda)
         
-    def _ajuda(self, _=0):
-        """O personagem dá uma explicação de como encontrarlaboratório """
-        Texto(self.fiocruz, "O laboratório ? Siga pela esquerda.").vai()
+   def _ajuda(self, _=0):
+        """O personagem dá uma explicação de como encrontrar o lab """
+        self.fiocruz.direita = LembrarHerdeitariedade()
+        Texto(self.fiocruz, "O laboratório? Siga pela direita").vai()
 
     def inicia(self):
         """O jogo inicia aqui. O cenário principal será apresentado """
         self.fiocruz.vai()
-        Texto(self.fiocruz, "Temos que achar o laboratório. Vamos perguntar a alguém").vai()
+        Texto(self.fiocruz, "Temos que achar o lab. Vamos perguntar a alguém").vai()
 
 
 class LembrarHerdeitariedade:
@@ -41,8 +42,8 @@ class LembrarHerdeitariedade:
         self.lab = Cena(FREDERICK)
         self.ajuda = Elemento(FOCO, x=130, y=100, cena=self.lab, style={"opacity": 0},vai=self._ajuda)
         self.denise = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 0})
-        self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, style={"opacity": 1},vai=self._ajuda25_1)
-        self.maria = Elemento(FOCO, x=260, y=140, cena=self.lab, style={"opacity": 1},vai=self._ajuda2_2)  
+        self.quadro = Elemento(QUADRO, x=422, y=140, cena=self.lab, vai=self._ajuda25_1)
+        self.maria = Elemento(FOCO, x=460, y=140, cena=self.lab, style={"opacity": 1},vai=self._ajuda2_2)  
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar formula """
@@ -73,6 +74,6 @@ class LembrarHerdeitariedade:
 
 
 if __name__ == "__main__":
-    fc = LembrarHerdeitariedade()
+    fc = Fiocruz()
     fc.inicia()
     
