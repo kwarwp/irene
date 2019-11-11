@@ -23,5 +23,5 @@ class FioCruz:
 		Texto(self.fiocruz, "O laboratório? Siga pela esquerda").vai()
 
 if __name__ == "__main__":
-    fc = FioCruz()
-    fc.inicia()
+	fc = FioCruz()
+	fc.inicia()
