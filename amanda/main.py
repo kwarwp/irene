@@ -16,7 +16,7 @@ class FioCruz:
         self.fiocruz = Cena(FIOCRUZ)
         self.ajuda = Elemento(FOCO, x=30, y=350, cena=self.fiocruz, style={"opacity": 0},vai=self._ajuda)
         
-   def _ajuda(self, _=0):
+    def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encrontrar o lab """
         self.fiocruz.direita = LembrarHerdeitariedade()
         Texto(self.fiocruz, "O laboratório? Siga pela direita").vai()
