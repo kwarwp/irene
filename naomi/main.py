@@ -19,7 +19,7 @@ class FioCruz:
         
 if __name__ == "__main__":
 fc = FioCruz()
-fc.inicia
+fc.inicia()
 
 
 
