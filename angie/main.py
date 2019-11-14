@@ -9,6 +9,7 @@ FOCO = "https://i.imgur.com/6e096Va.png"
 FIOCRUZ = "https://i.imgur.com/pJDyRCt.jpg"
 FREDERICK = "https://i.imgur.com/4EtsjiX.jpg"
 CANECA ="https://i.imgur.com/El0wysJ.png"
+CAIXAMETAL ="https://i.imgur.com/El0wysJ.png"
 
 class FioCruz:
     """ Cenário da FioCruz. """
@@ -92,7 +93,7 @@ class LembraGene:
     Imagens soltas na bancada: Fragmento,DNA, Proteína, Molécula, Gene, Átomos, Ordene.
     """
 class EntendeGene:
-    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂ´presa, surge um enigma, 
+    """Entender-gene: A cientista sai, rola um pedra, cai uma grade, ela está ÂÂÂÂ´presa, surge um enigma, 
     acerte a charada, ela precisa correr, aparecem palavras desorganizadas. 
     Imagens: Núcleo, Cromossomo +histonas,Proteína
     """
