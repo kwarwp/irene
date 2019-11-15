@@ -64,6 +64,7 @@ class LembrarHerdeitariedade:
         self.maria = Elemento(FOCO, x=635, y=160, cena=self.lab, style={"opacity": 0},vai=self._ajuda2_2)
         self.joana = Elemento(FOCO, x=770, y=150, cena=self.lab, style={"opacity": 0},vai=self._ajudajoana)
         self.tubo_de_ensaio = Elemento(FOCO, x=585, y=385, cena=self.lab, style={"opacity": 0},vai=self._ajudatabela)
+        self.tabela = Elemento(TABELA, x=585, y=385, cena=self.lab, vai=self._ajudatabela)
         
     def _ajuda(self, _=0):
         """O personagem dá uma explicação de como encontrar formula """
@@ -91,7 +92,7 @@ class LembrarHerdeitariedade:
     
     def _ajudajoana(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
-        Texto(self.lab, "Joana: Tão inteligente para umas coisas... Maria, é claro que o código é 2-2. Vejam lá na tabela que está na bancada o que isto significa").vai()
+        Texto(self.lab, "Joana: Tão inteligente para umas coisas... Maria, é claro que o código é 2-2. Vejam lá na bancada o que isto significa. Ele usava muito as pipetas").vai()
 
     def _ajudatabela(self, _=0):
         """O personagem dá uma explicação de como encontrar a formula """
